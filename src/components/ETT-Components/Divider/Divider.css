@@ -1,0 +1,7 @@
+@import '../../../theme/ett-style-theme.css';
+
+.divider-container {
+  border-bottom: var(--border-primary) var(--background-tinted-active-color);
+  padding: 0px;
+  width: var(--div-full-width);
+}

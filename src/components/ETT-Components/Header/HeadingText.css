@@ -1,0 +1,10 @@
+
+
+.header-text-container{
+    font-family: var(--text-primary-font-family); 
+	font-size: var(--project-title-size);
+	color: var(--text-secondary-color);
+    font-weight: var(--project-title-font-weight);
+    line-height: 1.8;
+	margin-bottom: var(--header-marging-bottom-size);
+}

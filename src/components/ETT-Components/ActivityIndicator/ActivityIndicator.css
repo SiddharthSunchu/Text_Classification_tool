@@ -1,0 +1,11 @@
+#small-icon {
+  font-size: var(--icon-primary-size);
+}
+
+#medium-icon {
+  font-size: var(--icon-secondary-size);
+}
+
+#large-icon {
+  font-size: var(--icon-large-size);
+}

@@ -1,0 +1,210 @@
+/*
+ * @Author: Siddharth Sunchu (OICT-ETT) 
+ * @Date: 2018-12-19 16:35:29 
+ * @Last Modified by: siddharth.sunchu@un.org
+ * @Last Modified time: 2019-01-07 15:03:57
+ */
+
+@import '../theme/ett-style-theme.css';
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--secondary-color);
+  width: var(--div-full-width);
+}
+
+/*--------------------------------
+Whole layout and header Component Styles
+-----------------------------------*/
+
+.ant-col-8 {
+  display: var(--div-display-primary);
+}
+
+.ant-layout-content {
+  background-color: var(--secondary-color);
+}
+
+.unite-icon {
+  width: var(--unite-logo-width-secondary);
+  margin-bottom: var(--margin-container-size);
+}
+
+.secondary-text {
+  color: var(--text-secondary-color);
+}
+
+.heading-text {
+  color: var(--text-secondary-color);
+  font-family: var(--text-primary-font-family);
+  font-weight: var(--project-title-font-weight);
+  font-size: var(--project-title-size);
+}
+
+.social-icons {
+  margin: var(--icons-margin-small);
+  fill: var(--icon-secdondary-color);
+}
+
+.social-icons:hover {
+  fill: var(--icon-primary-color);
+}
+
+.profile-icon {
+  margin-bottom: var(--margin-container-size);
+  width: var(--icon-primary-width);
+  right: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transition-duration: var(--div-hover-transition-duration-primary);
+}
+
+/*--------------------------------
+Ant Carousal Component Styles
+-----------------------------------*/
+
+.ant-carousel .slick-slider .slick-track,
+.ant-carousel .slick-slider .slick-list {
+  box-shadow: var(--background-box-shadow-primary);
+}
+
+.ant-carousel .slick-dots li {
+  background: var(--background-primary-shadow-color);
+}
+
+.ant-carousel .slick-dots li.slick-active button {
+  background: var(--background-tinted-active-color);
+}
+
+.ant-carousel {
+  margin: var(--div-margin-small);
+}
+
+.ant-carousel .slick-slide {
+  text-align: var(--div-display-justify-content-primary);
+  height: var(--carousal-height);
+  background: var(--secondary-color);
+  overflow: var(--div-overflow-primary);
+}
+
+/*--------------------------------
+Whole Tool Component Styles
+-----------------------------------*/
+
+.tool-container {
+  padding-left: var(--div-padding-xsmall);
+  padding-right: var(--div-padding-xsmall);
+}
+
+/*--------------------------------
+Whole Tool sector Component Styles
+-----------------------------------*/
+
+.steps-container {
+  margin: var(--section-margin-primary);
+}
+
+.sub-title-container {
+  margin: var(--section-margin-extra);
+}
+
+.header-container {
+  margin: var(--section-margin-secondary);
+}
+
+.select-container {
+  margin: var(--section-margin-primary);
+}
+
+/*--------------------------------
+Ant Upload and Dragger Component Styles
+-----------------------------------*/
+
+.ant-upload.ant-upload-drag {
+  background: var(--background-tinted-color);
+  height: var(--dragdrop-box-container-size);
+  margin-bottom: 1%;
+  border: var(--border-secondary) var(--border-box-color) !important;
+}
+
+.ant-upload.ant-upload-drag:hover {
+  background: var(--background-secondary-color);
+}
+
+/*--------------------------------
+Ant Modal confirm Component Styles
+-----------------------------------*/
+
+.ant-modal-content {
+  width: var(--modal-width);
+}
+
+.ant-modal-confirm-body .ant-modal-confirm-title {
+  color: var(--text-primary-color);
+  font-family: var(--text-primary-font-family);
+}
+
+.ant-modal-confirm-body .ant-modal-confirm-content {
+  color: var(--text-secondary-color);
+  font-family: var(--text-primary-font-family);
+}
+
+.ant-btn:hover {
+  background: var(--button-primary-color);
+  color: var(--text-white);
+  border: var(--border-primary) var(--button-primary-border-color);
+}
+
+.ant-btn {
+  background: var(--button-secondary-color);
+  color: var(--text-grey-color);
+  border: var(--border-primary) var(--button-secondary-border-color);
+}
+
+.ant-modal-confirm .ant-modal-confirm-btns button + button {
+  background: var(--button-secondary-color);
+  color: var(--text-grey-color);
+  border: var(--border-primary) var(--button-secondary-border-color);
+}
+
+.ant-modal-confirm .ant-modal-confirm-btns button + button:hover {
+  background: var(--button-primary-color);
+  color: var(--text-white);
+  border: var(--border-primary) var(--button-primary-border-color);
+}
+
+.ant-modal-confirm-confirm .ant-modal-confirm-body > .anticon {
+  color: var(--icon-primary-color);
+}
+
+/* --------------------------
+Team Description Sector 
+-------------------------- */
+
+/* --------------------------
+Team Info Area and Team description Styles
+-------------------------- */
+
+.team-description-area-social {
+  display: var(--div-display-none);
+}
+
+.service-area:hover .team-description-area-social {
+  display: var(--div-display-primary);
+  justify-content: var(--div-display-justify-content-primary);
+}
+
+.service-area:hover .profile-icon {
+  display: var(--div-display-none);
+}
+
+.service-area:hover {
+  background: linear-gradient(
+      var(--background-tinted-color),
+      var(--background-tinted-color)
+    )
+    var(--background-primary-style);
+  box-shadow: var(--background-box-shadow-primary);
+}

@@ -1,0 +1,15 @@
+.ant-card-head {
+  background: var(--background-tinted-color);
+}
+.ant-card-head-title {
+  white-space: var(--text-primary-white-space);
+}
+.ant-card-bordered {
+  border: var(--border-primary) var(--border-box-color);
+  margin: 0% 0px 5% 0px;
+}
+.ant-card-body {
+  display: var(--div-display-primary);
+  flex-flow: var(--div-flex-row);
+  justify-content: var(--div-display-justify-content-secondary);
+}

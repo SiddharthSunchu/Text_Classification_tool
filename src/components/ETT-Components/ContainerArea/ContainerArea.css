@@ -1,0 +1,8 @@
+.container-area:hover {
+  background: linear-gradient(
+      var(--background-tinted-color),
+      var(--background-tinted-color)
+    )
+    var(--background-primary-style);
+  box-shadow: var(--background-box-shadow-primary);
+}

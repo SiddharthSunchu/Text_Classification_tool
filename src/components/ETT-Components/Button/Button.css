@@ -1,0 +1,13 @@
+.button-container {
+  background: var(--button-primary-color);
+  border: var(--border-primary) var(--button-primary-color);
+  color: var(--text-white);
+  width: var(--button-primary-height);
+  height: var(--button-primary-width);
+  border-radius: var(--button-primary-border-radius);
+  cursor: var(--button-primary-cursor);
+}
+
+.button-container:hover {
+  background: var(--button-hover-color);
+}

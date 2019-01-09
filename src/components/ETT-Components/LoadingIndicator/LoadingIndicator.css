@@ -1,0 +1,20 @@
+.activity-indicator {
+    fill: var(--secondary-color);
+	animation: change-color infinite;
+    animation-duration: 3s;
+    position: relative;
+}
+
+@keyframes change-color {
+    0%   {fill:#00b0f1;  left: 0px; right : 0px;
+        }
+  25%  {fill:#4cc7f5;  left: 100px; right : 0px;
+    }
+  50%  {fill:#7fd7f8; left: 200px; right : 0px;
+}
+  75%  {fill:#b2e7fa; left: 100px; right : 0px;
+  }
+  100% {fill:#ffffff; left: 0px; right : 0px;
+  }
+
+}

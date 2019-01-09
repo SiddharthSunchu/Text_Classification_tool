@@ -1,0 +1,46 @@
+label {
+  color: var(--text-secondary-color);
+  margin-right: var(--inputBox-margin-right);
+  font-family: var(--text-primary-font-family);
+  display: var(--div-display-primary);
+  justify-content: var(--div-display-justify-content-primary);
+}
+
+input {
+  height: var(--inputBox-height);
+  width: var(--inputBox-input-width);
+  margin-left: var(--inputBox-margin-left);
+  border: var(--border-primary) var(--input-box-border-color);
+}
+
+textarea {
+  height: var(--inputBox-height);
+  width: var(--inputBox-textarea-width);
+  margin-left: var(--inputBox-margin-left);
+  margin-right: var(--inputBox-margin-right);
+  border: var(--border-primary) var(--input-box-border-color);
+}
+
+textarea:focus {
+  border: var(--inputBox-border-size) var(--textbox-primary-hover-color);
+  box-shadow: var(--inputBox-box-shadow);
+  outline: var(--inputBox-outline);
+}
+
+input:focus {
+  border: var(--inputBox-border-size) var(--textbox-primary-hover-color);
+  box-shadow: var(--inputBox-box-shadow);
+  outline: var(--inputBox-outline);
+}
+
+textarea:active {
+  border: var(--inputBox-border-size) var(--textbox-primary-hover-color);
+  box-shadow: var(--inputBox-box-shadow);
+  outline: var(--inputBox-outline);
+}
+
+input:active {
+  border: var(--inputBox-border-size) var(--textbox-primary-hover-color);
+  box-shadow: var(--inputBox-box-shadow);
+  outline: var(--inputBox-outline);
+}
