@@ -17,7 +17,11 @@ Store C.
 
 ##Dependencies
 The following list details project dependencies:
+- Microsoft Visual Studio Code
+- ES lint 
+- Prettier
 
+##Dev Dependencies
 - React
 - Ant Design
 - Axios
@@ -39,5 +43,4 @@ Analysis Document located at <Team_Directory>/projects/<Project_Name>/documents/
 
 ##Author
 
-- Siddharth Sunchu - OICT-ETT siddharth.sunchu@un.org
 - OICT/PSGD/ETT | ett@un.org
