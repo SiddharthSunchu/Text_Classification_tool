@@ -2,23 +2,23 @@
  * @Author: Siddharth Sunchu (OICT-ETT)
  * @Date: 2018-12-21 15:44:21
  * @Last Modified by: siddharth.sunchu@un.org
- * @Last Modified time: 2019-01-07 14:54:53
+ * @Last Modified time: 2019-01-17 14:17:57
  */
 
 // Base components
 import React from 'react';
 
 // SVG icons
-import ICONS from '../../../assets/SVGIcons/index';
+// import ICONS from '../../../assets/SVGIcons/index';
 
 // Constants
-import { TEAM_INFO, TEAM } from '../../../constants/index';
+import { TEAM_INFO } from '../../../constants/index';
 
 // ETT Component
 import ETTComponents from '../../ETT-Components/constants';
 
 // Style Palette
-import { SIZE, STYLE, CLASSNAME } from '../../../theme/ettStylePalette';
+import { SIZE, STYLE } from '../../../theme/ettStylePalette';
 
 /**
  * @author Siddharth Sunchu | siddharth.sunchu@un.org
@@ -45,7 +45,7 @@ const TeamDescription = () => (
       {TEAM_INFO.DESCRIPTION}
     </ETTComponents.Paragraph>
     <ETTComponents.SpaceSector height={SIZE.SECTOR_HEIGHT_SECONDARY} />
-    <ETTComponents.JustifyEvenlyWrapper>
+    {/* <ETTComponents.JustifyEvenlyWrapper>
       {TEAM.map(el => (
         <ETTComponents.ContainerArea className={CLASSNAME.SERVICE_AREA} key={el.NAME}>
           <el.ICONS className={CLASSNAME.PROFILE_ICON} />
@@ -64,7 +64,7 @@ const TeamDescription = () => (
           <ETTComponents.Paragraph>{el.ROLE}</ETTComponents.Paragraph>
         </ETTComponents.ContainerArea>
       ))}
-    </ETTComponents.JustifyEvenlyWrapper>
+    </ETTComponents.JustifyEvenlyWrapper> */}
   </section>
 );
 

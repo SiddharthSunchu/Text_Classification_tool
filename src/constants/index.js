@@ -2,7 +2,7 @@
  * @Author: Siddharth Sunchu (OICT-ETT)
  * @Date: 2018-12-17 15:31:53
  * @Last Modified by: siddharth.sunchu@un.org
- * @Last Modified time: 2019-01-08 16:16:05
+ * @Last Modified time: 2019-01-17 14:21:20
  */
 
 /**
@@ -21,9 +21,12 @@ export const ROUTES = Object.freeze({
   TOOL: '/tool',
 });
 
-const API_SERVER = 'http://10.244.113.172:33';
 
-export const API_UI = `http://localhost:3000${ROUTES.TOOL}`;
+// API SErver ENDpoint
+const API_SERVER = 'http://18.191.117.240:8000';
+
+// Check the UI URL to give Header Tab
+export const API_UI = `http://oict-psgd-ett-unisdr-qa.us-east-2.elasticbeanstalk.com${ROUTES.TOOL}`;
 
 export const API = Object.freeze({
   HAZARD_RESPONSE: `${API_SERVER}/getResults/hazard/response`,
@@ -53,16 +56,17 @@ export const FILE_TYPE = Object.freeze({
 });
 
 export const TITLES = Object.freeze({
-  PROJECT_NAME: ' Classification',
+  PROJECT_NAME: ' Relief Web Classification',
   DEPARTMENT_NAME: 'UNISDR',
   TECHNOLOGY_NAME: 'Machine Learning',
   HOME: 'HOME',
   TOOL: 'TOOL',
   ML: 'ML',
-  CLASSIFICATION_TOOL: ' Classification Tool',
+  CLASSIFICATION_TOOL: ' Tool',
   PROJECT: 'Project',
   PROJECT_DESCRIPTION:
-    'This project is to apply Machine Learning techniques to improve the efficiency of classifying articles on UNISDR website for Office for Disaster Risk Reduction. Each article and document will be classified into one or more hazards and themes labels according to different features of the articles.',
+    'This project applies Machine Learning techniques to attempt to improve the efficiency of classifying articles on the UNISDR Relief Web website for the Office for Disaster Risk Reduction. Each article is analyzed and then classified into one or more Hazard (17) and Theme (34) labels, according to varying features of the articles text.',
+  PROJECT_INFO: '* The overall scored accuracy of classification is 93% for Hazards, and 94% for Themes. We utilized because of the multi-label classification the <a href="https://en.wikipedia.org/wiki/Multi-label_classification" title="Multi-Label Classification - Hamming-Loss">"Hamming-Loss"</a> mathematical loss function to ascertain the overall scored accuracy for the combined models per type.',
   TITLE_DATA: 'title',
   TEXT_DATA: 'textData',
   TITLE_TEXTDATA: 'title and textdata',
@@ -74,6 +78,7 @@ export const TITLES = Object.freeze({
   IMAGE_ALT: 'Image',
   TEXT_AREA: 'textarea',
   TEXT_DATA_TITLE: 'Text Data',
+  PROJECT_FUTURE_INFO: 'Articles will be classified on customized granular Trained Models, which continually learn and improve over time',
 });
 
 export const SERVICE_AREA = [
@@ -85,13 +90,13 @@ export const SERVICE_AREA = [
   }),
   Object.freeze({
     TITLE: 'Method',
-    DESCRIPTION: 'Machine Learning',
+    DESCRIPTION: 'Machine Learning Classification',
     ICON_NAME: 'fa fa-cogs',
     IMAGES: ICONS.COGS,
   }),
   Object.freeze({
     TITLE: 'Application',
-    DESCRIPTION: 'Microsoft Azure - Machine Learning Studio',
+    DESCRIPTION: 'Custom Data Analysis using Python Libraries',
     ICON_NAME: 'fa fa-windows',
     IMAGES: ICONS.MICROSOFT,
   }),
@@ -105,18 +110,18 @@ export const SERVICE_AREA = [
 
 export const SERVICE_AREA_TITLE = Object.freeze({
   HEADING: 'Objectives and Details',
-  DESCRIPTION: 'UNISDR Classification Tool',
+  DESCRIPTION: 'UNISDR Relief Web Classification Tool',
 });
 
 export const CAROUSAL = [
   Object.freeze({
     TITLE: 'Data Collection',
-    DESCRIPTION: 'Crawling the original text data from websites.',
+    DESCRIPTION: 'Consuming the original text data from the Relief Web API endpoint.',
   }),
   Object.freeze({
     TITLE: 'Data Preparation',
     DESCRIPTION:
-      'Dealing with null values in datasets and extracting data for articles’ title, text, and categories.',
+      'Cleansing, pre-processing and normalizing data.',
   }),
   Object.freeze({
     TITLE: 'Data Prerecession',
@@ -125,7 +130,7 @@ export const CAROUSAL = [
   }),
   Object.freeze({
     TITLE: 'Data Balance',
-    DESCRIPTION: 'Balancing the imbalanced data using SMOKE function.',
+    DESCRIPTION: 'Data heavily unbalanced. Custom balancing of data using SMOKE function.',
   }),
   Object.freeze({
     TITLE: 'Feature Selection',
@@ -135,7 +140,7 @@ export const CAROUSAL = [
   Object.freeze({
     TITLE: 'Model Selection and Evaluation',
     DESCRIPTION:
-      'Splitting the data into two parts: training data and testing data. Comparing different models’ performance and selecting models with highest accuracy---Support Vector Machine.',
+      'Splitting the data into two parts: training data (80%) and testing data (20%). Comparing and optimizing different models’ performance and to obtain the highest accuracy. Hyper tuning of parameters.',
   }),
   Object.freeze({
     TITLE: 'Prediction',
@@ -159,7 +164,8 @@ export const CONTACT_INFO = Object.freeze({
   UN_FACEBOOK: 'https://www.facebook.com/UnitedNationsUnite/',
   UN_TWITTER: 'https://twitter.com/UN',
   UN_LINKEDIN: 'https://www.linkedin.com/company/united-nations/',
-  UN_EMAIL: 'bradleyk@un.org',
+  ETT_EMAIL: 'ett@un.org',
+  AI_EMAIL: 'ai@un.org',
   UN_PHONE_MAIN: 'Main: 212-963-4475',
   UN_PHONE_OFFICE: 'Office: 212-963-3333',
   UNISDR_HOME_LINK: 'https://www.unisdr.org/',

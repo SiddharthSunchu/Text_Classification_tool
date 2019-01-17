@@ -2,7 +2,7 @@
  * @Author: Siddharth Sunchu (OICT-ETT)
  * @Date: 2018-12-17 15:05:00
  * @Last Modified by: siddharth.sunchu@un.org
- * @Last Modified time: 2019-01-09 10:09:05
+ * @Last Modified time: 2019-01-17 14:16:34
  */
 
 // Base Components
@@ -81,7 +81,7 @@ class Tool extends Component {
   }
 
   onChangeTextData(e) {
-    console.log(e.target.value)
+    console.log(e.target.value);
     this.setState({
       textData: e.target.value,
     });
@@ -92,7 +92,7 @@ class Tool extends Component {
     this.setState({
       title: e.target.value,
     });
-    console.log(this.state.title)
+    console.log(this.state.title);
   }
 
   handleSubmit(event) {
@@ -222,6 +222,7 @@ class Tool extends Component {
         <ETTCOMPONENTS.JustifyCenterWrapper>
           <ETTCOMPONENTS.MainHeaderText>
             {TITLES.DEPARTMENT_NAME}
+            {TITLES.PROJECT_NAME}
             {TITLES.CLASSIFICATION_TOOL}
           </ETTCOMPONENTS.MainHeaderText>
         </ETTCOMPONENTS.JustifyCenterWrapper>
@@ -242,6 +243,16 @@ class Tool extends Component {
             {TITLES.PROJECT_DESCRIPTION}
           </ETTCOMPONENTS.Paragraph>
         </ETTCOMPONENTS.JustifyCenterWrapper>
+        {/* <ETTCOMPONENTS.JustifyCenterWrapper>
+          <ETTCOMPONENTS.Paragraph
+            style={{
+              textAlign: STYLE.TEXT_ALIGN_CENTER,
+              letterSpacing: STYLE.TEXT_SPACING,
+            }}
+          >
+            {TITLES.PROJECT_INFO}
+          </ETTCOMPONENTS.Paragraph>
+        </ETTCOMPONENTS.JustifyCenterWrapper> */}
 
         <section className={CLASSNAME.STEP_SELECTOR}>
           <br />

@@ -2,7 +2,7 @@
  * @Author: Siddharth Sunchu (OICT-ETT)
  * @Date: 2018-12-28 11:13:17
  * @Last Modified by: siddharth.sunchu@un.org
- * @Last Modified time: 2019-01-02 13:31:12
+ * @Last Modified time: 2019-01-17 14:03:09
  */
 
 // Base components
@@ -78,10 +78,12 @@ const FooterContainer = () => (
           </ETTComponents.Paragraph>
         </Col>
         <Col span={8}>
-          <a href={CONTACT_INFO.UN_EMAIL}>
+          <a href={CONTACT_INFO.ETT_EMAIL}>
             <ICONS.EMAIL width={30} style={{ marginRight: SIZE.MARGIN_SMALL }} />
           </a>
-          <ETTComponents.Paragraph>{CONTACT_INFO.UN_EMAIL}</ETTComponents.Paragraph>
+          <ETTComponents.Paragraph>
+            {`${CONTACT_INFO.ETT_EMAIL} | ${CONTACT_INFO.AI_EMAIL}`}
+          </ETTComponents.Paragraph>
         </Col>
       </Row>
     </Col>

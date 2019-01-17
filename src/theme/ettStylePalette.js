@@ -82,6 +82,7 @@ export const STYLE = Object.freeze({
   TEXT_ALIGN_CENTER: 'center',
   TEXT_SPACING: '1px',
   TEXT_MARGIN_CONTAINER: '0% 15%',
+  TEXT_MARGIN_HEADING: '20px',
 
   // Image
   IMAGE_POSITION: 'relative',
