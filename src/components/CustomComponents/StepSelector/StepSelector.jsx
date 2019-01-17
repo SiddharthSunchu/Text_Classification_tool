@@ -2,7 +2,7 @@
  * @Author: Siddharth Sunchu (OICT-ETT)
  * @Date: 2018-12-31 11:32:38
  * @Last Modified by: siddharth.sunchu@un.org
- * @Last Modified time: 2019-01-08 17:58:06
+ * @Last Modified time: 2019-01-17 14:38:59
  */
 
 // Base Component
@@ -75,7 +75,9 @@ const StepSelector = ({
     );
   }
   if (currentStep === 4) {
-    return <CustomComponents.Results result={result} output={output} />;
+    return (
+      <CustomComponents.Results result={result} output={output} inputLabelType={inputLabelType} />
+    );
   }
   return null;
 };

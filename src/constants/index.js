@@ -2,7 +2,7 @@
  * @Author: Siddharth Sunchu (OICT-ETT)
  * @Date: 2018-12-17 15:31:53
  * @Last Modified by: siddharth.sunchu@un.org
- * @Last Modified time: 2019-01-17 14:21:20
+ * @Last Modified time: 2019-01-17 15:02:48
  */
 
 /**
@@ -79,6 +79,12 @@ export const TITLES = Object.freeze({
   TEXT_AREA: 'textarea',
   TEXT_DATA_TITLE: 'Text Data',
   PROJECT_FUTURE_INFO: 'Articles will be classified on customized granular Trained Models, which continually learn and improve over time',
+  HAZARD_RESULT_INFO_1: '* The overall scored accuracy of classification is 93% for Hazards. We utilized because of the ',
+  THEME_RESULT_INFO_1: '* The overall scored accuracy of classification is 94% for Themes. We utilized because of the ',
+  HAZARD_RESULT_INFO_2: 'the Hamming-Loss, mathematical loss function to ascertain the overall scored accuracy for the combined models per type.',
+  THEME_RESULT_INFO_2: 'the Hamming-Loss, mathematical loss function to ascertain the overall scored accuracy for the combined models per type.',
+  MULTILABEL_CLASSIFICATION: 'multi-label classification ',
+  MULTILABLE_CLASSIFICATION_LINK: 'https://en.wikipedia.org/wiki/Multi-label_classification',
 });
 
 export const SERVICE_AREA = [
