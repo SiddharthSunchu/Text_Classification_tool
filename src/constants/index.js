@@ -2,7 +2,7 @@
  * @Author: Siddharth Sunchu (OICT-ETT)
  * @Date: 2018-12-17 15:31:53
  * @Last Modified by: siddharth.sunchu@un.org
- * @Last Modified time: 2019-01-17 15:02:48
+ * @Last Modified time: 2019-01-23 16:21:34
  */
 
 /**
@@ -15,6 +15,9 @@ import ICONS from '../assets/SVGIcons/index';
 import { Images } from '../assets/Images/constants';
 
 export const IMAGES = Images;
+
+
+export const hello = 'hello';
 
 export const ROUTES = Object.freeze({
   HOME: '/',
