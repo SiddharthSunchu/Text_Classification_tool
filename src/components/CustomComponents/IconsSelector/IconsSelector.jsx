@@ -15,7 +15,7 @@ import PropTypes from 'prop-types';
 import { Modal } from 'antd';
 
 // ETT Components
-import ETTComponents from '../../ETT-Components/constants';
+import ETTComponents from '../../ETT-Components/index';
 
 // SVG Icons
 import ICONS from '../../../assets/SVGIcons/index';

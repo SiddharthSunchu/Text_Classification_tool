@@ -1,9 +1,3 @@
-/*
- * @Author: Siddharth Sunchu (OICT-ETT)
- * @Date: 2018-12-28 11:11:45
- * @Last Modified by: siddharth.sunchu@un.org
- * @Last Modified time: 2019-01-02 11:13:11
- */
 
 // Base components
 import React from 'react';
@@ -13,11 +7,13 @@ import FooterContainer from './FooterBody';
 import FooterBottom from './FooterBottom';
 
 // ETT Components
-import ETTComponents from '../../ETT-Components/constants';
+import ETTComponents from '../index';
 
 /**
  * @author Siddharth Sunchu | siddharth.sunchu@un.org
+ * @since 2018-12-28 11:11:45
  * @description Home Footer Component to display Contact info and Social accounts
+ * @type StateLess Component
  */
 const Footer = () => (
   <section>
@@ -27,4 +23,5 @@ const Footer = () => (
   </section>
 );
 
+// Exporting the Footer to global
 export default Footer;

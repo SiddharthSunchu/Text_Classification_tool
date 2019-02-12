@@ -15,7 +15,7 @@ import PropTypes from 'prop-types';
 import Particles from 'react-particles-js';
 
 // Style Palette
-import { COLORS } from '../../../theme/ettStylePalette';
+import { COLORS } from '../theme/ettStylePalette';
 
 /**
  * @author Siddharth Sunchu OICT-ETT | Siddharth.sunchu@un.org

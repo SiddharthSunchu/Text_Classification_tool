@@ -1,9 +1,3 @@
-/*
- * @Author: Siddharth Sunchu (OICT-ETT)
- * @Date: 2018-12-28 11:13:17
- * @Last Modified by: siddharth.sunchu@un.org
- * @Last Modified time: 2019-01-17 14:03:09
- */
 
 // Base components
 import React from 'react';
@@ -12,20 +6,22 @@ import React from 'react';
 import { Row, Col } from 'antd';
 
 // Constants
-import { CONTACT_INFO, IMAGES, TITLES } from '../../../constants/index';
+import { CONTACT_INFO, IMAGES, TITLES } from '../constants';
 
 // ETT Components
-import ETTComponents from '../../ETT-Components/constants';
+import ETTComponents from '..';
 
 // Icons
 import ICONS from '../../../assets/SVGIcons';
 
 // Style Palette
-import { SIZE, CLASSNAME, STYLE } from '../../../theme/ettStylePalette';
+import { SIZE, CLASSNAME, STYLE } from '../theme/ettStylePalette';
 
 /**
  * @author Siddharth Sunchu | siddharth.sunchu@un.org
+ * @since 2018-12-28 11:13:17
  * @description Home Footer Body Component to display Contact Info
+ * @type StateLess Component
  */
 const FooterContainer = () => (
   <div style={{ height: SIZE.SECTOR_HEIGHT, margin: STYLE.FOOTER_CONTAINER }}>
@@ -90,4 +86,6 @@ const FooterContainer = () => (
   </div>
 );
 
+
+// Exporting the Footer Container to global
 export default FooterContainer;

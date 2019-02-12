@@ -10,7 +10,7 @@ import React from 'react';
 // Props Validation
 import PropTypes from 'prop-types';
 
-import { COLORS, SIZE } from '../../../theme/ettStylePalette';
+import { COLORS, SIZE } from '../theme/ettStylePalette';
 
 import './Paragraph.css';
 

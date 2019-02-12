@@ -1,9 +1,3 @@
-/*
- * @Author: Siddharth Sunchu (OICT-ETT)
- * @Date: 2018-12-28 11:15:28
- * @Last Modified by: siddharth.sunchu@un.org
- * @Last Modified time: 2019-01-02 11:08:12
- */
 
 // Base components
 import React from 'react';
@@ -12,17 +6,19 @@ import React from 'react';
 import ICONS from '../../../assets/SVGIcons';
 
 // Ett Components
-import ETTComponents from '../../ETT-Components/constants';
+import ETTComponents from '..';
 
 // Constants
 import { CONTACT_INFO } from '../../../constants/index';
 
 // Style Palette
-import { SIZE, CLASSNAME, STYLE } from '../../../theme/ettStylePalette';
+import { SIZE, CLASSNAME, STYLE } from '../theme/ettStylePalette';
 
 /**
  * @author Siddharth Sunchu | siddharth.sunchu@un.org
+ * @since 2018-12-28 11:15:28
  * @description Home Footer Bottom Component to display Social accounts
+ * @type StateLess Component
  */
 const FooterBottom = () => (
   <ETTComponents.JustifyStartWrapper
@@ -44,4 +40,5 @@ const FooterBottom = () => (
   </ETTComponents.JustifyStartWrapper>
 );
 
+// Exporting the Footer Bottom to global
 export default FooterBottom;

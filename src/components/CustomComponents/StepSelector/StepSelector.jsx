@@ -15,7 +15,7 @@ import PropTypes from 'prop-types';
 import CustomComponents from '../constants';
 
 // ETT Component
-import ETTComponents from '../../ETT-Components/constants';
+import ETTComponents from '../../ETT-Components/index';
 
 // Style Palette
 import { STYLE } from '../../../theme/ettStylePalette';

@@ -15,7 +15,7 @@ import { withRouter } from 'react-router-dom';
 import CustomComponents from '../../components/CustomComponents/constants';
 
 // ETT Components
-import EttComponents from '../../components/ETT-Components/constants';
+import EttComponents from '../../components/ETT-Components/index';
 
 // Themes
 import { COLORS, STYLE } from '../../theme/ettStylePalette';
@@ -43,7 +43,7 @@ const Home = () => (
     <EttComponents.SpaceSector />
     <CustomComponents.TeamDescription />
     <EttComponents.Divider />
-    <CustomComponents.Footer />
+    <EttComponents.Footer />
   </div>
 );
 

@@ -11,7 +11,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 // Style Palette
-import { STYLE, SIZE } from '../../../theme/ettStylePalette';
+import { STYLE, SIZE } from '../theme/ettStylePalette';
 
 // CSS Style
 import './ContainerArea.css';

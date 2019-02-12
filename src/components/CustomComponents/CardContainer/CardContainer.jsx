@@ -12,7 +12,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 // Ett Components
-import ETTComponents from '../../ETT-Components/constants';
+import ETTComponents from '../../ETT-Components/index';
 
 // Constants
 import {

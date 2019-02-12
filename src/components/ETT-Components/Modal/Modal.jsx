@@ -12,7 +12,7 @@ import React from 'react';
 import { Modal as PopUp } from 'antd';
 
 // Ett Components
-import EttComponents from '../constants';
+import EttComponents from '..';
 
 /**
  *@description Modal Component to display Message like a alert with props title and content

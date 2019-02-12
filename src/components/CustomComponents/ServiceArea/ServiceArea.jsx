@@ -12,7 +12,7 @@ import React from 'react';
 import { SERVICE_AREA_TITLE, SERVICE_AREA, TITLES } from '../../../constants/index';
 
 // ETT Components
-import ETTCOMPONENTS from '../../ETT-Components/constants';
+import ETTCOMPONENTS from '../../ETT-Components/index';
 
 // Style Palette
 import { CLASSNAME, STYLE } from '../../../theme/ettStylePalette';

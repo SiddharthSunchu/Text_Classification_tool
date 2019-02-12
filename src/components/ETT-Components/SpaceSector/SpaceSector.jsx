@@ -12,7 +12,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 // Style Palette
-import { COLORS, SIZE } from '../../../theme/ettStylePalette';
+import { COLORS, SIZE } from '../theme/ettStylePalette';
 
 /**
  * @author Siddharth Sunchu | siddharth.sunchu@un.org

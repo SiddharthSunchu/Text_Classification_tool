@@ -12,7 +12,7 @@ import React from 'react';
 import CustomComponents from '../constants';
 
 // ETT Components
-import ETTCOMPONENTS from '../../ETT-Components/constants';
+import ETTCOMPONENTS from '../../ETT-Components/index';
 
 // Constants
 import { CAROUSAL_TITLE } from '../../../constants/index';

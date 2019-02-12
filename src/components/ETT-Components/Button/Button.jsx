@@ -12,13 +12,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 // ETT-COMPONENTS
-import ETTCOMPONENTS from '../constants';
+import ETTCOMPONENTS from '..';
 
 // CSS Style
 import './Button.css';
 
 // Style Palette
-import { STYLE, COLORS, CLASSNAME } from '../../../theme/ettStylePalette';
+import { STYLE, COLORS, CLASSNAME } from '../theme/ettStylePalette';
 
 /**
  * @author Siddharth Sunchu | siddharth.sunchu@un.org

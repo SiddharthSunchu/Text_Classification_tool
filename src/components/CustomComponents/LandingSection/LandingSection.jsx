@@ -21,7 +21,7 @@ import { TITLES, IMAGES } from '../../../constants/index';
 import { SIZE, STYLE } from '../../../theme/ettStylePalette';
 
 // ETT Components
-import ETTComponents from '../../ETT-Components/constants';
+import ETTComponents from '../../ETT-Components/index';
 
 /**
  * @author Siddharth Sunchu (OICT) ETT | siddharth.sunchu@un.org

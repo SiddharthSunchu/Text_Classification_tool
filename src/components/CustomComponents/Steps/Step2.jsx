@@ -15,7 +15,7 @@ import PropTypes from 'prop-types';
 import { INPUT_TYPE, TOOL_PAGE_DETAILS } from '../../../constants/index';
 
 // ETT Component
-import ETTCOMPONENTS from '../../ETT-Components/constants';
+import ETTCOMPONENTS from '../../ETT-Components/index';
 
 // STyle Palette
 import { SIZE } from '../../../theme/ettStylePalette';

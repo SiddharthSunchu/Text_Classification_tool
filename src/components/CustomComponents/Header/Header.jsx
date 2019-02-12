@@ -9,7 +9,7 @@
 import React from 'react';
 
 // Ett Components
-import ETTComponents from '../../ETT-Components/constants';
+import ETTComponents from '../../ETT-Components/index';
 
 // Constants
 import { HEADER_MENU, API_UI, ROUTES } from '../../../constants/index';

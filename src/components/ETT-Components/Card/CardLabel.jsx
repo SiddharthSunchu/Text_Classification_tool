@@ -12,10 +12,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 // Ett Component
-import ETTCOMPONENTS from '../constants';
+import ETTCOMPONENTS from '..';
 
 // Style Palette
-import { COLORS, SIZE } from '../../../theme/ettStylePalette';
+import { COLORS, SIZE } from '../theme/ettStylePalette';
 
 /**
  * @description CardLabel Component to display Card labels with props value to

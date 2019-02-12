@@ -12,7 +12,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 // Theme
-import { STYLE } from '../../../theme/ettStylePalette';
+import { STYLE } from '../theme/ettStylePalette';
 
 /**
  *@description Form Component to wrap InputBox to make it a form with props children

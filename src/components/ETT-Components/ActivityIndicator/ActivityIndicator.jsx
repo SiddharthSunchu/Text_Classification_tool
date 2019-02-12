@@ -15,7 +15,7 @@ import PropTypes from 'prop-types';
 import './ActivityIndicator.css';
 
 // STyle Palette
-import { COLORS, SIZE, CLASSNAME } from '../../../theme/ettStylePalette';
+import { COLORS, SIZE, CLASSNAME } from '../theme/ettStylePalette';
 
 /**
  * @author Siddharth Sunchu (OICT)-ETT | siddharth.sunchu@un.org

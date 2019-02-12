@@ -15,7 +15,7 @@ import PropsTypes from 'prop-types';
 import { Upload } from 'antd';
 
 // ETT Components
-import ETTComponents from '../../ETT-Components/constants';
+import ETTComponents from '../../ETT-Components/index';
 
 // Constants
 import {

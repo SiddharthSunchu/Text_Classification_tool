@@ -21,10 +21,10 @@ import { Card as AntCard } from 'antd';
 import CardLabel from './CardLabel';
 
 // Ett Components
-import ETTCOMPONENTS from '../constants';
+import ETTCOMPONENTS from '..';
 
 // Style Palette
-import { COLORS } from '../../../theme/ettStylePalette';
+import { COLORS } from '../theme/ettStylePalette';
 
 /**
  * @author Siddharth Sunchu OICT-ETT | Siddharth.sunchu@un.org

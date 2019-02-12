@@ -11,7 +11,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 // Style Palette
-import { COLORS, SIZE, FONT_FAMILY } from '../../../theme/ettStylePalette';
+import { COLORS, SIZE, FONT_FAMILY } from '../theme/ettStylePalette';
 
 // CSS Style
 import './HeadingText.css';

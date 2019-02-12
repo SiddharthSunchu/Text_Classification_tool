@@ -21,7 +21,7 @@ import { TITLES, INPUT_TYPE, ERROR_MESSAGE } from '../../constants';
 import API from '../../service/Service';
 
 // ETT-COMPONENTS
-import ETTCOMPONENTS from '../../components/ETT-Components/constants';
+import ETTCOMPONENTS from '../../components/ETT-Components/index';
 
 // CUSTOM COMPONENTS
 import CustomComponents from '../../components/CustomComponents/constants';
@@ -59,6 +59,13 @@ class Tool extends Component {
     this.onChangeTitle = this.onChangeTitle.bind(this);
     this.onChangeTextData = this.onChangeTextData.bind(this);
   }
+
+  /**
+   * 
+   * @param {eventhandler} e - Event handler to chnage the Text
+   * @description Once you change the text on input box , it updates the state with the change
+   * @returns None
+   */
 
   onInputType(e) {
     this.setState({

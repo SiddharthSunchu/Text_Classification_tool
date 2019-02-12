@@ -21,7 +21,7 @@ import App from './app/App';
 import SERVICE from './service/Service';
 
 // ETT Component
-import ETTCOMPONENTS from './components/ETT-Components/constants';
+import ETTCOMPONENTS from './components/ETT-Components/index';
 
 // Constants
 import { ERROR_MESSAGE } from './constants';

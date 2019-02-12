@@ -15,7 +15,7 @@ import React from 'react';
 import { TEAM_INFO } from '../../../constants/index';
 
 // ETT Component
-import ETTComponents from '../../ETT-Components/constants';
+import ETTComponents from '../../ETT-Components/index';
 
 // Style Palette
 import { SIZE, STYLE } from '../../../theme/ettStylePalette';

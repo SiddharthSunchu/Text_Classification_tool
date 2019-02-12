@@ -1,6 +1,5 @@
 import CardContainer from './CardContainer/CardContainer';
 import CarousalInfo from './CarousalInfo/CarousalInfo';
-import Footer from './FooterArea/index';
 import Header from './Header/Header';
 import RequestResponse from './InputType/RequestResponse';
 import Batch from './InputType/Batch';
@@ -18,7 +17,6 @@ import StepSelector from './StepSelector/StepSelector';
 const CUSTOM_COMPONENTS = Object.freeze({
   CardContainer,
   CarousalInfo,
-  Footer,
   Header,
   RequestResponse,
   Batch,

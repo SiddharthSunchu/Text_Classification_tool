@@ -1,0 +1,158 @@
+/*
+ * @Author: Siddharth Sunchu (OICT-ETT) 
+ * @Date: 2018-12-20 10:55:55 
+ * @Last Modified by: siddharth.sunchu@un.org
+ * @Last Modified time: 2019-01-07 14:10:20
+ */
+
+ @import url('https://fonts.googleapis.com/css?family=Montserrat');
+ @import url('https://use.fontawesome.com/releases/v5.5.0/css/all.css');
+ @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+ 
+ :root {
+   /*--------------------------------
+   Primary Colors and Style
+ -----------------------------------*/
+   --primary-color: #00b0f1;
+   --secondary-color: #ffffff;
+ 
+   --border-primary: 1px solid;
+   --border-secondary: 1px dashed;
+   --border-box-color: #cbcbcb;
+   --textbox-primary-hover-color: #00b0f1;
+ 
+   --text-primary-size: 16px;
+   --text-secondary-size: 32px;
+ 
+   --border-bottom-primary-size: 1px;
+   --border-bottom-secondary-size: 2px;
+ 
+   /*--------------------------------
+   Div Style
+ -----------------------------------*/
+ 
+   --div-display-primary: flex;
+   --div-display-none: none;
+   --div-display-justify-content-primary: center;
+   --div-display-align-center: center;
+   --div-display-justify-content-secondary: flex-start;
+   --div-flex-row: row wrap;
+   --div-overflow-primary: hidden;
+   --div-hover-transition-duration-primary: 1200ms;
+   --div-full-width: 100%;
+   --div-margin-small: 10%;
+   --div-padding-xsmall: 5%;
+ 
+   /*--------------------------------
+   Background Color and  Style
+ -----------------------------------*/
+   --background-tinted-color: #fafafa;
+   --background-secondary-color: #ebebeb;
+   --background-primary-shadow-color: #ebebeb;
+   --background-tinted-active-color: #cbcbcb;
+   --background-primary-style: no-repeat center cover;
+   --background-box-shadow-primary: 0px 10px 20px 10px
+     var(--background-primary-shadow-color);
+ 
+   /*--------------------------------
+   Text Color and  Style
+ -----------------------------------*/
+   --text-primary-color: #333333;
+   --text-secondary-color: #666666;
+   --text-dark-grey-color: #666666;
+   --text-grey-color: #999999;
+   --text-light-grey-color: #ababab;
+   --text-lighter-grey-color: #cbcbcb;
+   --text-lightest-grey-color: #ebebeb;
+   --text-white: #ffffff;
+   --text-primary-shadow-color: #cbcbcb;
+   --text-primary-font-family: Montserrat, sans-serif;
+   --text-primary-font-weight: 600;
+   --text-secondary-font-weight: 400;
+   --text-primary-white-space: normal;
+ 
+   /*--------------------------------
+   Header and Title Color and  Style
+ -----------------------------------*/
+   --project-title-font-weight: 400;
+   --project-title-container-size: 100px;
+   --heading-application-title-size: 80px;
+   --heading-application-title-shadow-size: 1px 1px 1px 1px;
+   --project-title-size: 32px;
+   --header-marging-bottom-size: 100px;
+ 
+   /*--------------------------------
+   Icon Color and  Style
+ -----------------------------------*/
+   --icon-primary-color: #00b0f1;
+   --icon-secdondary-color: #999999;
+ 
+   --icons-margin-small: 10px;
+   --icons-margin-medium: 20px;
+ 
+   --icon-primary-size: 22px;
+   --icon-secondary-size: 36px;
+   --icon-large-size: 46px;
+   --icon-primary-width: 60;
+ 
+   /*--------------------------------
+   Button Color and  Style
+ -----------------------------------*/
+ 
+   --button-primary-color: #00b0f1;
+   --button-primary-border-color: #00b0f1;
+   --button-secondary-color: #ebebeb;
+   --button-secondary-border-color: #cbcbcb;
+   --button-hover-color: #009ed8;
+ 
+   --button-primary-height: 80px;
+   --button-primary-width: 35px;
+   --button-primary-border-radius: 3px;
+   --button-primary-cursor: pointer;
+ 
+   /*--------------------------------
+   Section Color and  Style
+ -----------------------------------*/
+   --section-margin-primary: 3% 13% 0% 13%;
+   --section-margin-secondary: 10% 5% 0% 5%;
+   --section-margin-extra: 5% 5% 0% 5%;
+ 
+   /*--------------------------------
+   Carousal Color and  Style
+ -----------------------------------*/
+   --carousal-height: 200px;
+   --carousal-text-align: center;
+ 
+   /*--------------------------------
+   InputBox Color and  Style
+ -----------------------------------*/
+   --inputBox-margin-right: 20px;
+   --inputBox-margin-left: 7px;
+   --inputBox-height: 35px;
+   --inputBox-input-width: 275px;
+   --inputBox-textarea-width: 375px;
+   --inputBox-box-shadow: 1px 1px 1px 1px #cbcbcb;
+   --inputBox-outline: none;
+   --inputBox-border-size: 2px solid;
+   --input-box-border-color: #666666;
+ 
+   /*--------------------------------
+   Radio Button Color and  Style
+ -----------------------------------*/
+   --radioButton-width: 23%;
+   --radioButton-height: 40px;
+ 
+   /*--------------------------------
+   Unite logo and size
+ -----------------------------------*/
+   --unite-logo-width: 200px;
+   --unite-logo-width-secondary: 80px;
+ 
+   /*--------------------------------
+   Extra Style
+ -----------------------------------*/
+   --margin-container-size: 10px;
+   --dragdrop-box-container-size: 150px;
+   --modal-width: 110%;
+ }
+ 

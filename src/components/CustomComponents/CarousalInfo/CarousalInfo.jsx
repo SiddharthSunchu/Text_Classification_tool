@@ -15,7 +15,7 @@ import { Carousel } from 'antd';
 import { CAROUSAL } from '../../../constants/index';
 
 // Ett Components
-import ETTComponents from '../../ETT-Components/constants';
+import ETTComponents from '../../ETT-Components/index';
 
 // Style Palette
 import { SIZE } from '../../../theme/ettStylePalette';
