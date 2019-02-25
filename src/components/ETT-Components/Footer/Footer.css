@@ -1,0 +1,13 @@
+.unite-icon {
+    width: var(--unite-logo-width-secondary);
+    margin-bottom: var(--margin-container-size);
+  }
+
+  .social-icons {
+    margin: var(--icons-margin-small);
+    fill: var(--icon-secdondary-color);
+  }
+  
+  .social-icons:hover {
+    fill: var(--icon-primary-color);
+  }

@@ -9,7 +9,7 @@ import ICONS from '../../../assets/SVGIcons';
 import ETTComponents from '..';
 
 // Constants
-import { CONTACT_INFO } from '../../../constants/index';
+import { CONTACT_INFO } from '../constants';
 
 // Style Palette
 import { SIZE, CLASSNAME, STYLE } from '../theme/ettStylePalette';

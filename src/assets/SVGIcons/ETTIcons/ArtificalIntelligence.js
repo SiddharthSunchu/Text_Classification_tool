@@ -5,11 +5,11 @@
  * @Last Modified time: 2018-12-28 11:58:19
  */
 
-//Base Component
-import React from "react";
+// Base Component
+import React from 'react';
 
-//Style Palette
-import { COLORS, SIZE } from "../../../theme/ettStylePalette";
+// Style Palette
+import { COLORS, SIZE } from '../../../theme/ettStylePalette';
 
 /**
  *@description Artifical intelligence svg Icon with flexible size and color
@@ -20,8 +20,8 @@ export const ArtificalIntelligence = ({
   style = {},
   fill = COLORS.ICON_PRIMARY_COLOR,
   width = SIZE.MEDIUM,
-  className = "",
-  viewBox = "0 0 196.908 196.908"
+  className = '',
+  viewBox = '0 0 196.908 196.908',
 }) => (
   <svg
     width={width}
@@ -29,7 +29,7 @@ export const ArtificalIntelligence = ({
     height={width}
     viewBox={viewBox}
     xmlns="http://www.w3.org/2000/svg"
-    className={`svg-icon ${className || ""}`}
+    className={`svg-icon ${className || ''}`}
     xmlnsXlink="http://www.w3.org/1999/xlink"
   >
     <g>

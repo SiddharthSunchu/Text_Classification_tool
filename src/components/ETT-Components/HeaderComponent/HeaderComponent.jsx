@@ -16,7 +16,7 @@ import { Layout, Menu } from 'antd';
 import { Link } from 'react-router-dom';
 
 // Contants
-import { CONTACT_INFO, IMAGES } from '../../../constants/index';
+import { CONTACT_INFO, IMAGES } from '../constants';
 
 // CSS Style
 import './HeaderComponent.css';

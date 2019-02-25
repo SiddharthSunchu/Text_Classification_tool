@@ -74,7 +74,7 @@ const CardContainer = ({ output, inputLabelType }) => {
       {output.map((el1) => {
         const string = el1.labels;
         const arrayLabels = string.split(', ');
-        const prob = el1.probability;
+        const prob = el1.probabilities;
         const probLabels = prob.split(', ');
         const newLabel = [];
         for (let i = 0; i < probLabels.length; i += 1) {

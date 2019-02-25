@@ -25,9 +25,10 @@ export const ROUTES = Object.freeze({
 
 // API SErver ENDpoint
 const API_SERVER = 'http://18.191.117.240:8000';
+// const API_SERVER = 'http://0.0.0.0:8000';
 
 // Check the UI URL to give Header Tab
-export const API_UI = `http://oict-psgd-ett-unisdr-qa.us-east-2.elasticbeanstalk.com${ROUTES.TOOL}`;
+export const API_UI = `http:3.16.107.64${ROUTES.TOOL}`;
 
 export const API = Object.freeze({
   HAZARD_RESPONSE: `${API_SERVER}/getResults/hazard/response`,

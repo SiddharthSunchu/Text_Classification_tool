@@ -17,6 +17,9 @@ import ICONS from '../../../assets/SVGIcons';
 // Style Palette
 import { SIZE, CLASSNAME, STYLE } from '../theme/ettStylePalette';
 
+//CSS Style
+import './Footer.css';
+
 /**
  * @author Siddharth Sunchu | siddharth.sunchu@un.org
  * @since 2018-12-28 11:13:17

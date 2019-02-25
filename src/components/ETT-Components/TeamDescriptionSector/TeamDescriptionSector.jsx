@@ -1,10 +1,3 @@
-/*
- * @Author: Siddharth Sunchu (OICT-ETT)
- * @Date: 2018-12-21 15:44:21
- * @Last Modified by: siddharth.sunchu@un.org
- * @Last Modified time: 2019-01-17 14:17:57
- */
-
 // Base components
 import React from 'react';
 
@@ -15,13 +8,14 @@ import React from 'react';
 import { TEAM_INFO } from '../../../constants/index';
 
 // ETT Component
-import ETTComponents from '../../ETT-Components/index';
+import ETTComponents from '../index';
 
 // Style Palette
 import { SIZE, STYLE } from '../../../theme/ettStylePalette';
 
 /**
  * @author Siddharth Sunchu | siddharth.sunchu@un.org
+ * @since 2018-12-21 15:44:21
  * @description Team description Component to display team description and
  * display about team members
  */
@@ -48,4 +42,5 @@ const TeamDescription = () => (
   </section>
 );
 
+// Exporting the TeamDescription
 export default TeamDescription;

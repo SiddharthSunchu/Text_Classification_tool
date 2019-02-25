@@ -1,10 +1,3 @@
-/*
- * @Author: Siddharth Sunchu (OICT-ETT)
- * @Date: 2019-01-02 17:05:20
- * @Last Modified by: siddharth.sunchu@un.org
- * @Last Modified time: 2019-01-03 15:46:12
- */
-
 // Base components
 import React from 'react';
 
@@ -14,125 +7,163 @@ import PropTypes from 'prop-types';
 // Particles JS
 import Particles from 'react-particles-js';
 
-// Style Palette
+// ETT Style Palette
 import { COLORS } from '../theme/ettStylePalette';
 
+// Style and Constants
+import { PARTICLES, SHAPE_TYPE, INTERACTIVITY } from './stylePalette';
+
+import './Background3d.css';
+
 /**
- * @author Siddharth Sunchu OICT-ETT | Siddharth.sunchu@un.org
- * @description 3js particle background for home page or landing page with
- * props color for circle and link and props onClick and onHover enable options
+ * @author Siddharth Sunchu (OICT)-ETT | siddharth.sunchu@un.org
+ * @description Activity Indicator Component which uses font awesome library
+ * @since 2019-01-02 16:59:29
+ * @param  {string} [linkColor = #666666 or ICON_PROCESS] - Line color which is between two object.
+ * @param {string} [shapeType = circle] - Type of the Particles with options
+ * - circle
+ * - edge
+ * - triangle
+ * - polygon
+ * - star
+ * @param {color} [typeColor = #666666] - Color of the shape type.
+ * @param {string} [strokeColor= #666666] - Color of the stroke.
+ * @param {string} [detectType = canvas] - Type of the interactivity detect.
+ * - canvas
+ * - window
+ * @param {boolean} [onHoverEnable = false] - OnHover enable function.
+ * @param {string} [hoverMode = repulse] - Hover mode with options like
+ * - grab
+ * - bubble
+ * - repulse
+ * @param {boolean} [onClickEnable = false] - onClick enable function.
+ * @param {color} [backgroundColor = #FFFFFF] - Background color of the particles JS background.
+ * @param {CSS Class} [className] - You can define your classname using this props.
+ * @type StateLess Component
  */
 const Background3d = ({
-  linkColor, circleColor, color, onClickEnable, onHoverEnable,
+  linkColor,
+  shapeType,
+  typeColor,
+  strokeColor,
+  detectType,
+  onHoverEnable,
+  hoverMode,
+  onClickEnable,
+  clickMode,
+  backgroundColor,
+  className,
 }) => (
   <Particles
     params={{
       particles: {
         number: {
-          value: 80,
+          value: PARTICLES.NUMBER.VALUE,
           density: {
             enable: true,
-            value_area: 800,
+            value_area: PARTICLES.NUMBER.DENSITY_VALUE_AREA,
           },
         },
         color: {
-          value: circleColor,
+          value: typeColor,
         },
         shape: {
-          type: 'circle',
+          type: shapeType,
           stroke: {
-            width: 0,
-            color,
+            width: PARTICLES.SHAPE.STROKE_WIDTH,
+            color: strokeColor,
           },
           polygon: {
-            nb_sides: 5,
+            nb_sides: PARTICLES.SHAPE.POLYGON_SIDES,
           },
         },
         opacity: {
-          value: 0.465604457176227,
+          value: PARTICLES.OPACITY.VALUE,
           random: false,
           anim: {
             enable: false,
-            speed: 1,
-            opacity_min: 0.1,
+            speed: PARTICLES.OPACITY.ANIM_SPEED,
+            opacity_min: PARTICLES.OPACITY.OPACITY_MIN,
             sync: false,
           },
         },
         size: {
-          value: 3,
+          value: PARTICLES.SIZE.VALUE,
           random: true,
           anim: {
             enable: false,
-            speed: 47.948982282851034,
-            size_min: 0.1,
+            speed: PARTICLES.SIZE.ANIM_SPEED,
+            size_min: PARTICLES.SIZE.SIZE_MIN,
             sync: false,
           },
         },
         line_linked: {
           enable: true,
-          distance: 150,
+          distance: PARTICLES.LINE_LINKED.DISTANCE,
           color: linkColor,
-          opacity: 0.4,
-          width: 1,
+          opacity: PARTICLES.LINE_LINKED.OPACITY,
+          width: PARTICLES.LINE_LINKED.WIDTH,
         },
         move: {
           enable: true,
-          speed: 3,
-          direction: 'none',
+          speed: PARTICLES.MOVE.SPEED,
+          direction: PARTICLES.MOVE.DIRECTION,
           random: false,
           straight: false,
-          out_mode: 'out',
+          out_mode: PARTICLES.MOVE.OUT_MODE,
           bounce: false,
           attract: {
             enable: false,
-            rotateX: 600,
-            rotateY: 1200,
+            rotateX: PARTICLES.MOVE.ATTRACT_ROTATE_X,
+            rotateY: PARTICLES.MOVE.ATTRACT_ROTATE_Y,
           },
         },
       },
       interactivity: {
-        detect_on: 'canvas',
+        detect_on: detectType,
         events: {
           onhover: {
             enable: onHoverEnable,
-            mode: 'repulse',
+            mode: hoverMode,
           },
           onclick: {
             enable: onClickEnable,
-            mode: 'push',
+            mode: clickMode,
           },
           resize: true,
         },
         modes: {
           grab: {
-            distance: 400,
+            distance: PARTICLES.MODES.GRAB_DISTANCE,
             line_linked: {
-              opacity: 1,
+              opacity: PARTICLES.MODES.OPACITY,
             },
           },
           bubble: {
-            distance: 400,
-            size: 40,
-            duration: 2,
-            opacity: 8,
-            speed: 3,
+            distance: PARTICLES.MODES.BUBBLE_DISTANCE,
+            size: PARTICLES.MODES.BUBBLE_SIZE,
+            duration: PARTICLES.MODES.BUBBLE_DURATION,
+            opacity: PARTICLES.MODES.BUBBLE_OPACITY,
+            speed: PARTICLES.MODES.BUBBLE_SPEED,
           },
           repulse: {
-            distance: 200,
-            duration: 0.4,
+            distance: PARTICLES.MODES.REPULSE_DISTANCE,
+            duration: PARTICLES.MODES.REPULSE_DURATION,
           },
           push: {
-            particles_nb: 4,
+            particles_nb: PARTICLES.MODES.PUSH_PARTICLES_NB,
           },
           remove: {
-            particles_nb: 2,
+            particles_nb: PARTICLES.MODES.REMOVE_PARTICLES_NB,
           },
         },
       },
     }}
     style={{
-      zIndex: 1,
+      zIndex: PARTICLES.STYLE.ZINDEX,
+      backgroundColor,
     }}
+    className={className}
   />
 );
 
@@ -142,17 +173,29 @@ export default Background3d;
 // Default Props value
 Background3d.defaultProps = {
   linkColor: COLORS.ICON_PROCESS,
-  circleColor: COLORS.ICON_PROCESS,
-  color: COLORS.ICON_PROCESS,
-  onClickEnable: false,
+  shapeType: SHAPE_TYPE.CIRCLE,
+  typeColor: COLORS.ICON_PROCESS,
+  strokeColor: COLORS.ICON_PROCESS,
+  detectType: INTERACTIVITY.DETECT_ON_TYPE.CANVAS,
   onHoverEnable: false,
+  hoverMode: INTERACTIVITY.ON_HOVER_MODE.REPULSE,
+  onClickEnable: false,
+  clickMode: INTERACTIVITY.ON_CLICK_MODE.REPULSE,
+  backgroundColor: COLORS.SECONDARY_COLOR,
+  className: '',
 };
 
 // Props Validation Rules
 Background3d.propTypes = {
   linkColor: PropTypes.string,
-  circleColor: PropTypes.string,
-  color: PropTypes.string,
-  onClickEnable: PropTypes.bool,
+  shapeType: PropTypes.string,
+  typeColor: PropTypes.string,
+  strokeColor: PropTypes.string,
+  detectType: PropTypes.string,
   onHoverEnable: PropTypes.bool,
+  hoverMode: PropTypes.string,
+  onClickEnable: PropTypes.bool,
+  clickMode: PropTypes.string,
+  backgroundColor: PropTypes.string,
+  className: PropTypes.string,
 };

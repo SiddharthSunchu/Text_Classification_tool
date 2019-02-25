@@ -6,30 +6,36 @@
  */
 
 //ETT Icons
-import { ArtificalIntelligence } from "../SVGIcons/ETTIcons/ArtificalIntelligence";
-import { MachineLearning } from "../SVGIcons/ETTIcons/MachineLearning";
-import { FrontEnd } from "../SVGIcons/ETTIcons/FrontEnd";
-import { Location } from "../SVGIcons/ETTIcons/Location";
-import { Phone } from "../SVGIcons/ETTIcons/Phone";
-import { Email } from "../SVGIcons/ETTIcons/Email";
-import { RightArrow } from "./ETTIcons/RightArrow";
-import { DownArrow } from "./ETTIcons/DownArrow";
-import { Upload } from "./ETTIcons/Upload";
+import { ArtificalIntelligence } from '../SVGIcons/ETTIcons/ArtificalIntelligence';
+import { MachineLearning } from '../SVGIcons/ETTIcons/MachineLearning';
+import { FrontEnd } from '../SVGIcons/ETTIcons/FrontEnd';
+import { Location } from '../SVGIcons/ETTIcons/Location';
+import { Phone } from '../SVGIcons/ETTIcons/Phone';
+import { Email } from '../SVGIcons/ETTIcons/Email';
+import { RightArrow } from './ETTIcons/RightArrow';
+import { DownArrow } from './ETTIcons/DownArrow';
+import { Upload } from './ETTIcons/Upload';
 //Social Icons
-import { Facebook } from "./SocialIcons/Facebook";
-import { Linkdin } from "./SocialIcons/Linkdin";
-import { Twitter } from "./SocialIcons/Twitter";
+import { Facebook } from './SocialIcons/Facebook';
+import { Linkdin } from './SocialIcons/Linkdin';
+import { Twitter } from './SocialIcons/Twitter';
 
 // Service area icons
-import { Goal } from "./ServiceAreaIcons/Goal";
-import { Cogs } from "./ServiceAreaIcons/Cogs";
-import { Microsoft } from "./ServiceAreaIcons/Microsoft";
-import { Cloud } from "./ServiceAreaIcons/Cloud";
+import { Goal } from './ServiceAreaIcons/Goal';
+import { Cogs } from './ServiceAreaIcons/Cogs';
+import { Microsoft } from './ServiceAreaIcons/Microsoft';
+import { Cloud } from './ServiceAreaIcons/Cloud';
+import { Secure } from './ServiceAreaIcons/Secure';
 
 //Team Area Icons
-import { Manager } from "./TeamIcons/Manager";
-import { SoftwareEngineer } from "./TeamIcons/SoftwareEngineer";
-import { DataScience } from "./TeamIcons/DataScience";
+import { Manager } from './TeamIcons/Manager';
+import { SoftwareEngineer } from './TeamIcons/SoftwareEngineer';
+import { DataScience } from './TeamIcons/DataScience';
+
+//Project Icons
+import { BlockChain } from './ProjectIcons/Blockchain';
+import { RewardBadge } from './ServiceAreaIcons/RewardBadge';
+import { Group } from './ServiceAreaIcons/Group';
 
 const ICONS = Object.freeze({
   //ETT - icons
@@ -65,11 +71,17 @@ const ICONS = Object.freeze({
   COGS: Cogs,
   MICROSOFT: Microsoft,
   CLOUD: Cloud,
+  SECURE: Secure,
+  REWARDS: RewardBadge,
+  GROUP: Group,
 
   //Team Area Icons
   MANAGER: Manager,
   SOFTWARE_ENGINEER: SoftwareEngineer,
-  DATA_SCIENCE: DataScience
+  DATA_SCIENCE: DataScience,
+
+  //Project Icons
+  BLOCKCHAIN: BlockChain
 });
 
 export default ICONS;

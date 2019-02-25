@@ -23,6 +23,8 @@ import { STYLE, COLORS, CLASSNAME } from '../theme/ettStylePalette';
 /**
  * @author Siddharth Sunchu | siddharth.sunchu@un.org
  * @description Button Component with props disable
+ * @since 2019-01-02 17:24:28
+ *
  */
 const Button = ({
   title, onClick, style, disabled,

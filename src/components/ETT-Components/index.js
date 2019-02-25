@@ -25,9 +25,9 @@ import Card from './Card/Card';
 import SuccessNotification from './Notification/SuccessNotification';
 import ErrorNotification from './Notification/ErrorNotification';
 import Footer from './Footer/index';
+import ServiceArea from './ServiceArea/ServiceArea';
 
 import './theme/ettStylePalette.css';
-
 
 const ETTCOMPONENTS = Object.freeze({
   ActivityIndicator,
@@ -56,7 +56,8 @@ const ETTCOMPONENTS = Object.freeze({
   Card,
   SuccessNotification,
   ErrorNotification,
-  Footer
+  Footer,
+  ServiceArea
 });
 
 export default ETTCOMPONENTS;
