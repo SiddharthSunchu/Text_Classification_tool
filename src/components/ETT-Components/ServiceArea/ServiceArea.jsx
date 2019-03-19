@@ -12,7 +12,7 @@ import { CLASSNAME, STYLE } from '../../../theme/ettStylePalette';
 
 /**
  * @author Siddharth Sunchu (OICT) ETT | siddharth.sunchu@un.org
- * @since 2018-02-25 11:42:36
+ * @since 2018-12-21 15:42:36
  * @description Service Area Component displayed on Home page to show different methods
  * and application used in this project
  */
@@ -21,7 +21,7 @@ const ServiceArea = ({
 }) => (
   <section>
     <ETTCOMPONENTS.JustifyCenterWrapper>
-      <ETTCOMPONENTS.Paragraph>{title}</ETTCOMPONENTS.Paragraph>
+      <ETTCOMPONENTS.SectionHeader>{title}</ETTCOMPONENTS.SectionHeader>
     </ETTCOMPONENTS.JustifyCenterWrapper>
     <ETTCOMPONENTS.JustifyCenterWrapper>
       <ETTCOMPONENTS.HeaderText style={{ margin: STYLE.TEXT_MARGIN_HEADING }}>
@@ -31,6 +31,7 @@ const ServiceArea = ({
     <ETTCOMPONENTS.JustifyCenterWrapper>
       <ETTCOMPONENTS.Paragraph>{description}</ETTCOMPONENTS.Paragraph>
     </ETTCOMPONENTS.JustifyCenterWrapper>
+    <ETTCOMPONENTS.SpaceSector height={100}></ETTCOMPONENTS.SpaceSector>
     <ETTCOMPONENTS.JustifyEvenlyWrapper>
       {data.map(el => (
         <ETTCOMPONENTS.ContainerArea key={el.TITLE}>

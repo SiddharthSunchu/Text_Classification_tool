@@ -5,6 +5,9 @@ import UNITE_LOGO_BLACK from './unite-logo/unite-logo-black.png';
 import UNITE_LOGO_BLUE from './unite-logo/unite-logo-edit.png';
 import UNITE_LOGO_ICON_COLOR from './unite-logo/unite-logo-iconColor.png';
 import UNITE_LOGO_MAIN_COLOR from './unite-logo/unite-logo-main-color.png';
+import UNITE_NEW_LOGO_PRIMARY_COLOR from './unite-logo/unite-new-primary-color.png';
+import UNITE_NEW_LOGO_BLACK_COLOR from './unite-logo/unite-new-black-color.png';
+import UNITE_TOKEN_LOGO_BLACK_COLOR from './unite-logo/unite-token-logo-black-color.png';
 import UNISDR_SYMBOL from './UN-logo/UNISDRWhite.png';
 import UNSYMBOL_ICON_COLOR from './UN-logo/UN-main-color.png';
 import UNSYMBOL_UN_COLOR from './UN-logo/UNSYMBOL_UN_COLOR.png';
@@ -22,13 +25,15 @@ import DOWNLOAD from './icons/download.png';
 import BRAIN from './home-logo/brain.png';
 import BACKGROUND from './background/background.png';
 
-
 export const Images = Object.freeze({
   UNITE_LOGO_HOME,
   UNISDR_SYMBOL,
   UNITE_LOGO_BLUE,
   UNITE_LOGO_ICON_COLOR,
   UNITE_LOGO_WHITE,
+  UNITE_NEW_LOGO_PRIMARY_COLOR,
+  UNITE_NEW_LOGO_BLACK_COLOR,
+  UNITE_TOKEN_LOGO_BLACK_COLOR,
   MACHINE_LEARNING,
   MACHINE_LEARNING_2,
   UNITE_LOGO_BLACK,
@@ -45,5 +50,5 @@ export const Images = Object.freeze({
   SOFTWARE_DEVELOPER,
   BACKGROUND,
   BRAIN,
-  UNSYMBOL_UN_COLOR,
+  UNSYMBOL_UN_COLOR
 });

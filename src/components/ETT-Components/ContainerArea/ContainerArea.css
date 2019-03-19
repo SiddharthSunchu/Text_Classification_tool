@@ -6,3 +6,14 @@
     var(--background-primary-style);
   box-shadow: var(--background-box-shadow-primary);
 }
+
+.container-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 300px;
+  transition-duration: 1200ms;
+  flex-wrap: wrap;
+  flex-direction: column;
+}

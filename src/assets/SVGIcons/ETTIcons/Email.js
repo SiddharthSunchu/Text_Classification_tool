@@ -12,10 +12,10 @@
  */
 
 //Base Component
-import React from "react";
+import React from 'react';
 
 //Style Palette
-import { COLORS, SIZE } from "../../../theme/ettStylePalette";
+import { COLORS, SIZE } from '../../../theme/ettStylePalette';
 
 /**
  * @description Cloud svg Icon with flexible size and color
@@ -25,8 +25,8 @@ export const Email = ({
   style = {},
   fill = COLORS.ICON_PRIMARY_COLOR,
   width = SIZE.MEDIUM,
-  className = "",
-  viewBox = "0 0 511.626 511.626"
+  className = '',
+  viewBox = '0 0 511.626 511.626'
 }) => (
   <svg
     width={width}
@@ -34,7 +34,7 @@ export const Email = ({
     height={width}
     viewBox={viewBox}
     xmlns="http://www.w3.org/2000/svg"
-    className={`svg-icon ${className || ""}`}
+    className={`svg-icon ${className || ''}`}
     xmlnsXlink="http://www.w3.org/1999/xlink"
   >
     <path

@@ -1,0 +1,8 @@
+.social-icons {
+  margin: var(--icons-margin-small);
+  fill: var(--icon-secdondary-color);
+}
+
+.social-icons:hover {
+  fill: var(--icon-primary-color);
+}

@@ -8,22 +8,86 @@
 // Base Component
 import React from 'react';
 
+// React Router
+import { Link, withRouter } from 'react-router-dom';
+
+// ant design
+import { Menu } from 'antd';
+
+// Import Prop Types Validation
+import { PropTypes } from 'prop-types';
+
 // Ett Components
 import ETTComponents from '../../ETT-Components/index';
 
 // Constants
-import { HEADER_MENU, API_UI, ROUTES } from '../../../constants/index';
-
-// Default Selector Nav Bar in Header
-let currentPage = ROUTES.HOME;
-if (window.location.href === API_UI) {
-  currentPage = ROUTES.TOOL;
-}
+import { HEADER_ROUTE_NAMES } from '../../../constants/index';
 
 /**
  * @author Siddharth Sunchu | siddharth.sunchu@un.org
  * @description HeaderComponent Component to display Header
  */
-const Header = () => <ETTComponents.Header menuItems={HEADER_MENU} selectedKey={currentPage} />;
+const Header = ({ location, currentUser }) => {
+  let menuItem = [];
 
-export default Header;
+  if (currentUser === '') {
+    menuItem = [
+      <Menu.Item key="/">
+        <Link to="/">{HEADER_ROUTE_NAMES.HOME}</Link>
+      </Menu.Item>,
+      <Menu.Item key="/login">
+        <Link to="/login">{HEADER_ROUTE_NAMES.LOGIN}</Link>
+      </Menu.Item>,
+    ];
+  } else if (currentUser === 'admin') {
+    menuItem = [
+      <Menu.Item key="/">
+        <Link to="/">{HEADER_ROUTE_NAMES.HOME}</Link>
+      </Menu.Item>,
+      <Menu.Item key="/tool">
+        <Link to="/tool">{HEADER_ROUTE_NAMES.ADMIN_TOOL}</Link>
+      </Menu.Item>,
+      <Menu.Item key="/setting">
+        <Link to="/setting">{HEADER_ROUTE_NAMES.SETTING}</Link>
+      </Menu.Item>,
+      <Menu.Item key="/profile">
+        <Link to="/profile">{HEADER_ROUTE_NAMES.PROFILE}</Link>
+      </Menu.Item>,
+    ];
+  } else if (currentUser === 'user') {
+    menuItem = [
+      <Menu.Item key="/">
+        <Link to="/">{HEADER_ROUTE_NAMES.HOME}</Link>
+      </Menu.Item>,
+      <Menu.Item key="/tool">
+        <Link to="/tool">{HEADER_ROUTE_NAMES.TOOL}</Link>
+      </Menu.Item>,
+      <Menu.Item key="/profile">
+        <Link to="/profile">{HEADER_ROUTE_NAMES.PROFILE}</Link>
+      </Menu.Item>,
+    ];
+  } else {
+    menuItem = [
+      <Menu.Item key="/">
+        <Link to="/">{HEADER_ROUTE_NAMES.HOME}</Link>
+      </Menu.Item>,
+      <Menu.Item key="/login">
+        <Link to="/login">{HEADER_ROUTE_NAMES.LOGIN}</Link>
+      </Menu.Item>,
+    ];
+  }
+  return <ETTComponents.Header selectedKey={location.pathname}>{menuItem}</ETTComponents.Header>;
+};
+
+export default withRouter(Header);
+
+// // Default Props value
+// Header.defaultProps = {
+//   location: null,
+//   history: SIZE.SECTOR_HEIGHT,
+// };
+// Props Validation Rules
+Header.propTypes = {
+  location: PropTypes.instanceOf(Object).isRequired,
+  currentUser: PropTypes.string.isRequired,
+};

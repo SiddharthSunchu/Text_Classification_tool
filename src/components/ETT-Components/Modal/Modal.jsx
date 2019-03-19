@@ -1,41 +1,86 @@
-/*
- * @Author: Siddharth Sunchu (OICT-ETT)
- * @Date: 2018-12-17 15:33:15
- * @Last Modified by: siddharth.sunchu@un.org
- * @Last Modified time: 2019-01-03 17:25:37
+/**
+ * @author Siddharth Sunchu (OICT)-ETT | siddharth.sunchu@un.org
+ * @since 2019-02-26
+ * @description The Modal Component to display any message in the UI like a alert or confirm component
  */
 
 // Base Component
 import React from 'react';
 
-// Ant design Component
-import { Modal as PopUp } from 'antd';
+// Props Validation
+import PropTypes from 'prop-types';
 
-// Ett Components
-import EttComponents from '..';
+// Ant Design
+import { Modal as Popup, Button } from 'antd';
+
+// CSS Style
+import './Modal.css';
+
+import ETTCOMPONENTS from '../index';
+// import MODAL_STYLE from './constants';
+
+const MODAL_FOOTER = [];
 
 /**
- *@description Modal Component to display Message like a alert with props title and content
+ * @param {boolean} open - To open the Modal component
+ * @param {function} onClose - function determining on close
+ * @param {element} children - to customize the modal component according to user's needs.
+ * @type Stateless Components
  */
 const Modal = ({
-  title, content, handleOk, onCancel, showModal,
-}) => {
-  function confirm() {
-    PopUp.confirm({
-      title: 'Confirm',
-      content: 'Bla bla ...',
-      okText: '确认',
-      cancelText: '取消',
-    });
-  }
+  title, open, onCancel, onOk, center, footer, children, style,
+}) => (
+  <Popup
+    visible={open}
+    onCancel={onCancel}
+    onOk={onOk}
+    centered={center}
+    footer={footer}
+    style={style}
+  >
+    <ETTCOMPONENTS.JustifyCenterWrapper>
+      <ETTCOMPONENTS.HeaderText
+        margin={40}
+        style={{ letterSpacing: '10px', textTransform: 'uppercase' }}
+      >
+        {title}
+      </ETTCOMPONENTS.HeaderText>
+    </ETTCOMPONENTS.JustifyCenterWrapper>
+    {children}
+  </Popup>
+)
+;
+// exporting the component
+export default Modal;
 
-  return (
-    <div onClick={confirm}>
-      <PopUp title={title} onOk={handleOk} onCancel={onCancel} visible={showModal}>
-        <EttComponents.Paragraph>{content}</EttComponents.Paragraph>
-      </PopUp>
-    </div>
-  );
+// Default props
+Modal.defaultProps = {
+  open: false,
+  title: 'Test',
+  children: '',
+  center: true,
+  footer: MODAL_FOOTER,
+  style: {},
 };
 
-export default Modal;
+// Props Validation Rules
+Modal.propTypes = {
+  open: PropTypes.bool,
+  onCancel: PropTypes.func.isRequired,
+  onOk: PropTypes.func.isRequired,
+  title: PropTypes.string,
+  center: PropTypes.bool,
+  footer: PropTypes.oneOfType([
+    PropTypes.element,
+    PropTypes.string,
+    PropTypes.array,
+    PropTypes.object,
+  ]),
+  children: PropTypes.oneOfType([
+    PropTypes.element,
+    PropTypes.string,
+    PropTypes.array,
+    PropTypes.object,
+  ]),
+  style: PropTypes.instanceOf(Object),
+};

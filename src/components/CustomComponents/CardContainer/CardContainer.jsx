@@ -16,7 +16,11 @@ import ETTComponents from '../../ETT-Components/index';
 
 // Constants
 import {
-  API, TOOL_PAGE_DETAILS, TITLES, LABEL_TYPE,
+  API,
+  TOOL_PAGE_DETAILS,
+  TITLES,
+  LABEL_TYPE,
+  // RESULT_RESULT,
 } from '../../../constants/index';
 
 // Style Palette
@@ -71,10 +75,11 @@ const CardContainer = ({ output, inputLabelType }) => {
           />
         </a>
       </ETTComponents.JustifyStartWrapper>
+      {console.log(output)}
       {output.map((el1) => {
-        const string = el1.labels;
+        const string = el1.LABELS;
         const arrayLabels = string.split(', ');
-        const prob = el1.probabilities;
+        const prob = el1.PROB;
         const probLabels = prob.split(', ');
         const newLabel = [];
         for (let i = 0; i < probLabels.length; i += 1) {
@@ -84,8 +89,8 @@ const CardContainer = ({ output, inputLabelType }) => {
 
         return (
           <ETTComponents.Card
-            title={el1.title}
-            key={el1.title.toString()}
+            title={el1.TITLE}
+            key={el1.TITLE.toString()}
             labels={newLabel}
             labelValue={probLabels}
           />

@@ -2,6 +2,9 @@
 // Base components
 import React from 'react';
 
+// Props Validation
+import PropTypes from 'prop-types';
+
 // Custom Components
 import FooterContainer from './FooterBody';
 import FooterBottom from './FooterBottom';
@@ -15,9 +18,9 @@ import ETTComponents from '../index';
  * @description Home Footer Component to display Contact info and Social accounts
  * @type StateLess Component
  */
-const Footer = () => (
+const Footer = ({ secondEmail }) => (
   <section>
-    <FooterContainer />
+    <FooterContainer secondEmail={secondEmail}/>
     <ETTComponents.Divider />
     <FooterBottom />
   </section>
@@ -25,3 +28,12 @@ const Footer = () => (
 
 // Exporting the Footer to global
 export default Footer;
+
+Footer.defaultProps = {
+  secondEmail: ''
+}
+
+// Props Validation Rules
+Footer.propTypes = {
+  secondEmail: PropTypes.string,
+};

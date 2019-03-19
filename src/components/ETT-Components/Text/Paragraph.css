@@ -1,8 +1,8 @@
-.paragraph-container{
-    font-family: var(--text-primary-font-family);
-    color: var(--text-grey-color);
-    font-size: var(--text-primary-size);
-    font-weight: var(--text-secondary-font-weight);
-    margin-top: 0;
-    line-height: 1.9;
+.paragraph-container {
+  font-family: var(--text-primary-font-family);
+  color: var(--text-grey-color);
+  font-size: var(--text-primary-size);
+  font-weight: var(--text-secondary-font-weight);
+  margin-top: 0;
+  line-height: 1.9;
 }

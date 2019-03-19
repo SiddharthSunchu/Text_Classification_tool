@@ -19,6 +19,7 @@ import { Upload } from './ETTIcons/Upload';
 import { Facebook } from './SocialIcons/Facebook';
 import { Linkdin } from './SocialIcons/Linkdin';
 import { Twitter } from './SocialIcons/Twitter';
+import { Outlook } from './SocialIcons/Outlook';
 
 // Service area icons
 import { Goal } from './ServiceAreaIcons/Goal';
@@ -65,6 +66,7 @@ const ICONS = Object.freeze({
   FACEBOOK: Facebook,
   LINKDIN: Linkdin,
   TWITTER: Twitter,
+  OUTLOOK: Outlook,
 
   //Service Area Icons
   GOAL: Goal,

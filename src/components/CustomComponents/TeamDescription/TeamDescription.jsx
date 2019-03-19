@@ -30,6 +30,7 @@ const TeamDescription = () => (
     <ETTComponents.JustifyCenterWrapper>
       <ETTComponents.Paragraph>{TEAM_INFO.TITLE}</ETTComponents.Paragraph>
     </ETTComponents.JustifyCenterWrapper>
+
     <ETTComponents.JustifyCenterWrapper>
       <ETTComponents.HeaderText margin={SIZE.SECTOR_HEIGHT_ZER0}>
         {TEAM_INFO.NAME}

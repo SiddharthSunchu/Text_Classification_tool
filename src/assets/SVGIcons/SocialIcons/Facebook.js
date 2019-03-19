@@ -11,10 +11,13 @@
  */
 
 //Base Component
-import React from "react";
+import React from 'react';
 
 //Style Palette
-import { COLORS, SIZE } from "../../../theme/ettStylePalette";
+import { COLORS, SIZE } from '../../../theme/ettStylePalette';
+
+//CSS Style
+import './SocialIcons.css';
 
 /**
  * @description Facebook Icon have props width fill and style
@@ -22,10 +25,10 @@ import { COLORS, SIZE } from "../../../theme/ettStylePalette";
  */
 export const Facebook = ({
   style = {},
-  fill = COLORS.ICON_PRIMARY_COLOR,
+  fill = '',
   width = SIZE.MEDIUM,
-  className = "",
-  viewBox = "0 0 512 512"
+  className = 'social-icons',
+  viewBox = '0 0 512 512'
 }) => (
   <svg
     width={width}
@@ -33,12 +36,13 @@ export const Facebook = ({
     height={width}
     viewBox={viewBox}
     xmlns="http://www.w3.org/2000/svg"
-    className={`svg-icon ${className || ""}`}
+    className={`svg-icon ${className || ''}`}
     xmlnsXlink="http://www.w3.org/1999/xlink"
   >
     <g>
       <g>
         <path
+          fill={fill}
           d="M476.69,512H35.31C15.89,512,0,496.11,0,476.69V35.31C0,15.89,15.89,0,35.31,0H476.69
 	C496.11,0,512,15.89,512,35.31V476.69C512,496.11,496.11,512,476.69,512"
         />

@@ -1,0 +1,98 @@
+.ant-table-content {
+  /* width: 50%; */
+  margin: 3%;
+}
+
+.ant-table-pagination.ant-pagination {
+  display: flex;
+  justify-content: center;
+  float: initial;
+}
+
+.ant-pagination {
+  /* display: none; */
+  font-family: var(--text-primary-font-family);
+  color: var(--text-primary-color);
+}
+
+.ant-pagination-item {
+  color: var(--text-grey-color);
+}
+
+.ant-pagination-prev:hover,
+.ant-pagination-next:hover {
+  /* border-color: var(--primary-color) !important; */
+}
+
+.ant-pagination-prev:hover,
+.ant-pagination-next:hover,
+.ant-pagination-item-link:hover {
+  border-color: var(--primary-color) !important;
+}
+
+.ant-pagination-disabled:hover,
+.ant-pagination-disabled:focus > a:not([href]):not([tabindex]) {
+  color: var(--primary-color);
+}
+
+.ant-pagination-item:hover > a:not([href]):not([tabindex]) {
+  color: var(--primary-color);
+}
+
+.ant-pagination-item:hover {
+  border: 1px solid var(--primary-color);
+}
+
+.ant-pagination-item-active {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.ant-pagination-item-active > a {
+  color: var(--primary-color) !important;
+  font-family: var(--text-primary-font-family);
+}
+
+/* a:not([href]):not([tabindex]) {
+  color: var(--text-grey-color);
+}
+
+a:not([href]):not([tabindex]):hover {
+  color: var(--primary-color);
+} */
+
+.ant-table {
+  color: var(--text-grey-color);
+  font-family: var(--text-primary-font-family);
+}
+
+tbody > tr > td {
+  font-family: var(--text-primary-font-family);
+  color: var(--text-grey-color);
+  font-size: var(--text-primary-size);
+  font-weight: var(--text-secondary-font-weight);
+  margin-top: 0;
+  line-height: 1.9;
+}
+
+td > a {
+  color: var(--text-grey-color);
+  font-weight: 200;
+}
+
+.ant-table-thead > tr > th {
+  background-color: var(--primary-color);
+  color: var(--text-white);
+  border: 1px solid var(--secondary-color);
+}
+
+.ant-table-tbody > tr:hover > td {
+  background-color: var(--background-tinted-color);
+}
+
+.ant-table-thead > tr:first-child > th:first-child {
+  border-top-left-radius: 0px;
+}
+.ant-table-thead > tr:first-child > th:last-child {
+  border-top-right-radius: 0px;
+}

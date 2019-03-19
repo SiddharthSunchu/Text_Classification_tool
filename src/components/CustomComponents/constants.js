@@ -13,6 +13,7 @@ import TeamDescription from './TeamDescription/TeamDescription';
 import WorkingInfo from './WorkingInfo/WorkingInfo';
 import IconsSelector from './IconsSelector/IconsSelector';
 import StepSelector from './StepSelector/StepSelector';
+import ShowLaoding from './ShowLoading/ShowLoading';
 
 const CUSTOM_COMPONENTS = Object.freeze({
   CardContainer,
@@ -30,6 +31,7 @@ const CUSTOM_COMPONENTS = Object.freeze({
   WorkingInfo,
   IconsSelector,
   StepSelector,
+  ShowLaoding,
 });
 
 export default CUSTOM_COMPONENTS;

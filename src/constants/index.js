@@ -16,12 +16,23 @@ import { Images } from '../assets/Images/constants';
 
 export const IMAGES = Images;
 
-
 export const ROUTES = Object.freeze({
   HOME: '/',
   TOOL: '/tool',
+  TOOL: '/tool',
+  LOGIN: '/login',
+  PROFILE: '/profile',
+  SETTING: '/setting',
 });
 
+export const HEADER_ROUTE_NAMES = Object.freeze({
+  HOME: 'Home',
+  LOGIN: 'Login',
+  TOOL: 'Tool',
+  ADMIN_TOOL: 'Tool',
+  PROFILE: 'Profile',
+  SETTING: 'Setting',
+});
 
 // API SErver ENDpoint
 const API_SERVER = 'http://18.191.117.240:8000';
@@ -68,7 +79,8 @@ export const TITLES = Object.freeze({
   PROJECT: 'Project',
   PROJECT_DESCRIPTION:
     'This project applies Machine Learning techniques to attempt to improve the efficiency of classifying articles on the UNISDR Relief Web website for the Office for Disaster Risk Reduction. Each article is analyzed and then classified into one or more Hazard (17) and Theme (34) labels, according to varying features of the articles text.',
-  PROJECT_INFO: '* The overall scored accuracy of classification is 93% for Hazards, and 94% for Themes. We utilized because of the multi-label classification the <a href="https://en.wikipedia.org/wiki/Multi-label_classification" title="Multi-Label Classification - Hamming-Loss">"Hamming-Loss"</a> mathematical loss function to ascertain the overall scored accuracy for the combined models per type.',
+  PROJECT_INFO:
+    '* The overall scored accuracy of classification is 93% for Hazards, and 94% for Themes. We utilized because of the multi-label classification the <a href="https://en.wikipedia.org/wiki/Multi-label_classification" title="Multi-Label Classification - Hamming-Loss">"Hamming-Loss"</a> mathematical loss function to ascertain the overall scored accuracy for the combined models per type.',
   TITLE_DATA: 'title',
   TEXT_DATA: 'textData',
   TITLE_TEXTDATA: 'title and textdata',
@@ -80,11 +92,16 @@ export const TITLES = Object.freeze({
   IMAGE_ALT: 'Image',
   TEXT_AREA: 'textarea',
   TEXT_DATA_TITLE: 'Text Data',
-  PROJECT_FUTURE_INFO: 'Articles will be classified on customized granular Trained Models, which continually learn and improve over time',
-  HAZARD_RESULT_INFO_1: '* The overall scored accuracy of classification is 93% for Hazards. We utilized because of the ',
-  THEME_RESULT_INFO_1: '* The overall scored accuracy of classification is 94% for Themes. We utilized because of the ',
-  HAZARD_RESULT_INFO_2: 'the Hamming-Loss, mathematical loss function to ascertain the overall scored accuracy for the combined models per type.',
-  THEME_RESULT_INFO_2: 'the Hamming-Loss, mathematical loss function to ascertain the overall scored accuracy for the combined models per type.',
+  PROJECT_FUTURE_INFO:
+    'Articles will be classified on customized granular Trained Models, which continually learn and improve over time',
+  HAZARD_RESULT_INFO_1:
+    '* The overall scored accuracy of classification is 93% for Hazards. We utilized because of the ',
+  THEME_RESULT_INFO_1:
+    '* The overall scored accuracy of classification is 94% for Themes. We utilized because of the ',
+  HAZARD_RESULT_INFO_2:
+    'the Hamming-Loss, mathematical loss function to ascertain the overall scored accuracy for the combined models per type.',
+  THEME_RESULT_INFO_2:
+    'the Hamming-Loss, mathematical loss function to ascertain the overall scored accuracy for the combined models per type.',
   MULTILABEL_CLASSIFICATION: 'multi-label classification ',
   MULTILABLE_CLASSIFICATION_LINK: 'https://en.wikipedia.org/wiki/Multi-label_classification',
 });
@@ -128,8 +145,7 @@ export const CAROUSAL = [
   }),
   Object.freeze({
     TITLE: 'Data Preparation',
-    DESCRIPTION:
-      'Cleansing, pre-processing and normalizing data.',
+    DESCRIPTION: 'Cleansing, pre-processing and normalizing data.',
   }),
   Object.freeze({
     TITLE: 'Data Prerecession',
@@ -287,9 +303,101 @@ export const ERROR_MESSAGE = Object.freeze({
   CONNECTION_FAILED: 'Please Refresh the page. Connection failed',
   ONLY_CSV: 'You can only upload CSV file!',
   ONE_FILE: 'You can only upload one CSV file at a time!',
+  LOGIN_EMAIL: 'Please input a valid email address',
+  LOGIN_PASSWORD: 'Please input a valid password',
+});
+
+export const USER = Object.freeze({
+  USERNAME_OR_EMAIL: 'yihan@un.org',
+  PASSWORD: '0123456789',
 });
 
 export const SUCCESS_MESSAGE = Object.freeze({
   FILE_UPLOAD: ' file successfully uploaded.',
   FILE_REMOVED: ' file successfully removed.',
 });
+
+export const RESULT_RESULT = [
+  {
+    TITLE:
+      'The impact of climate change policy on the risk of water stress in southern and eastern Asia',
+    TEXTDATA:
+      "'Earthquake prediction' is the ultimate goal for geoscientists. This volume presents the latest ideas of the ever fascinating and challenging research of earthquake prediction. Sunspot activity and Coronal mass ejection are considered to be influential phenomena in affecting both the electric as well as the magnetic characteristics of sun-earth environment. All these changes have been observed before the occurrence of earthquakes and tsunami in various parts of the earth.",
+    LABELS: 'Drought',
+    PROB: '100%',
+  },
+
+  {
+    TITLE:
+      'Impact of California fires on local and regional air quality: the role of a low?cost sensor network and satellite observations',
+    TEXTDATA:
+      "'Earthquake prediction' is the ultimate goal for geoscientists. This volume presents the latest ideas of the ever fascinating and challenging research of earthquake prediction. Sunspot activity and Coronal mass ejection are considered to be influential phenomena in affecting both the electric as well as the magnetic characteristics of sun-earth environment. All these changes have been observed before the occurrence of earthquakes and tsunami in various parts of the earth.",
+    LABELS: 'Wild Fire',
+    PROB: '100%',
+  },
+
+  {
+    TITLE: 'Early warning for flash floods',
+    TEXTDATA:
+      "'Earthquake prediction' is the ultimate goal for geoscientists. This volume presents the latest ideas of the ever fascinating and challenging research of earthquake prediction. Sunspot activity and Coronal mass ejection are considered to be influential phenomena in affecting both the electric as well as the magnetic characteristics of sun-earth environment. All these changes have been observed before the occurrence of earthquakes and tsunami in various parts of the earth.",
+    LABELS: 'Flood',
+    PROB: '99%',
+  },
+
+  {
+    TITLE: 'Facing natural hazards with Maori environmental knowledge',
+    TEXTDATA:
+      "'Earthquake prediction' is the ultimate goal for geoscientists. This volume presents the latest ideas of the ever fascinating and challenging research of earthquake prediction. Sunspot activity and Coronal mass ejection are considered to be influential phenomena in affecting both the electric as well as the magnetic characteristics of sun-earth environment. All these changes have been observed before the occurrence of earthquakes and tsunami in various parts of the earth.",
+    LABELS: 'Drought, Earthquake, Flood, Land Slide, Tsunami, Volcano',
+    PROB: '93.1, 45.2, 93.18, 97.89, 97.48, 98.95',
+  },
+
+  {
+    TITLE: 'Promoting and protecting rights in recovery',
+    TEXTDATA:
+      "'Earthquake prediction' is the ultimate goal for geoscientists. This volume presents the latest ideas of the ever fascinating and challenging research of earthquake prediction. Sunspot activity and Coronal mass ejection are considered to be influential phenomena in affecting both the electric as well as the magnetic characteristics of sun-earth environment. All these changes have been observed before the occurrence of earthquakes and tsunami in various parts of the earth.",
+    LABELS: 'Earthquake, Flood',
+    PROB: '95.77, 88.79',
+  },
+
+  {
+    TITLE:
+      'Joint WMO/IOC technical commission for oceanography and marine meteorology, third session',
+    TEXTDATA:
+      "'Earthquake prediction' is the ultimate goal for geoscientists. This volume presents the latest ideas of the ever fascinating and challenging research of earthquake prediction. Sunspot activity and Coronal mass ejection are considered to be influential phenomena in affecting both the electric as well as the magnetic characteristics of sun-earth environment. All these changes have been observed before the occurrence of earthquakes and tsunami in various parts of the earth.",
+    LABELS: 'Cyclone, Storm Surge, Tsunami',
+    PROB: '54.12, 100.0, 97.48',
+  },
+
+  {
+    TITLE: 'Drought contingency plans and planning in the Greater Horn of Africa',
+    TEXTDATA:
+      "'Earthquake prediction' is the ultimate goal for geoscientists. This volume presents the latest ideas of the ever fascinating and challenging research of earthquake prediction. Sunspot activity and Coronal mass ejection are considered to be influential phenomena in affecting both the electric as well as the magnetic characteristics of sun-earth environment. All these changes have been observed before the occurrence of earthquakes and tsunami in various parts of the earth.",
+    LABELS: 'Drought',
+    PROB: '100%',
+  },
+
+  {
+    TITLE: 'No time for doubt: tackling urban risk',
+    TEXTDATA:
+      "'Earthquake prediction' is the ultimate goal for geoscientists. This volume presents the latest ideas of the ever fascinating and challenging research of earthquake prediction. Sunspot activity and Coronal mass ejection are considered to be influential phenomena in affecting both the electric as well as the magnetic characteristics of sun-earth environment. All these changes have been observed before the occurrence of earthquakes and tsunami in various parts of the earth.",
+    LABELS: 'Cyclone, Drought, Earthquake, Flood, Heat Wave, Wild Fire',
+    PROB: '95.82, 81.91, 61.24, 93.78, 56.84, 97.06',
+  },
+
+  {
+    TITLE: 'Earthquake prediction',
+    TEXTDATA:
+      "'Earthquake prediction' is the ultimate goal for geoscientists. This volume presents the latest ideas of the ever fascinating and challenging research of earthquake prediction. Sunspot activity and Coronal mass ejection are considered to be influential phenomena in affecting both the electric as well as the magnetic characteristics of sun-earth environment. All these changes have been observed before the occurrence of earthquakes and tsunami in various parts of the earth.",
+    LABELS: 'EarthQuake, Tsunami',
+    PROB: '100%, 99%',
+  },
+
+  {
+    TITLE: 'Natural hazards and disasters',
+    TEXTDATA:
+      "'Earthquake prediction' is the ultimate goal for geoscientists. This volume presents the latest ideas of the ever fascinating and challenging research of earthquake prediction. Sunspot activity and Coronal mass ejection are considered to be influential phenomena in affecting both the electric as well as the magnetic characteristics of sun-earth environment. All these changes have been observed before the occurrence of earthquakes and tsunami in various parts of the earth.",
+    LABELS: 'Cyclone, Earthquake, Flood, Land Slide, Volcano',
+    PROB: '59.95, 95.77, 78.19, 44.14, 100.0',
+  },
+];

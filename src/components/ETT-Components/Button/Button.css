@@ -1,13 +1,72 @@
 .button-container {
-  background: var(--button-primary-color);
-  border: var(--border-primary) var(--button-primary-color);
-  color: var(--text-white);
-  width: var(--button-primary-height);
-  height: var(--button-primary-width);
-  border-radius: var(--button-primary-border-radius);
+  background: var(--button-primary-color) !important;
+  border: var(--border-primary) var(--button-primary-color) !important;
+  color: var(--text-white) !important;
+  width: var(--button-primary-width) !important;
+  height: var(--button-primary-height) !important;
+  border-radius: 0px !important;
+  cursor: var(--button-primary-cursor) !important;
+}
+
+/*--------------------------------
+  Default Button Colors and Style
+-----------------------------------*/
+
+.default-button-container {
+  background: var(--button-default-color) !important;
+  border: var(--border-primary) var(--button-default-border-color) !important;
+  color: var(--text-white) !important;
+  width: var(--button-default-width) !important;
+  height: var(--button-default-height) !important;
+  border-radius: var(--button-default-border-radius) !important;
+  cursor: var(--button-default-cursor);
+}
+
+.default-button-container:hover,
+.default-button-container:active,
+.default-button-container:focus {
+  background: var(--button-hover-color);
+  box-shadow: #ffffff;
+}
+
+/*--------------------------------
+  Primary Button Colors and Style
+-----------------------------------*/
+
+.primary-button-container {
+  background: var(--button-primary-color) !important;
+  border: var(--border-primary) var(--button-primary-border-color) !important;
+  color: var(--text-white) !important;
+  width: var(--button-primary-width) !important;
+  height: var(--button-primary-height) !important;
+  border-radius: var(--button-primary-border-radius) !important;
   cursor: var(--button-primary-cursor);
 }
 
-.button-container:hover {
+.primary-button-container:hover,
+.primary-button-container:active,
+.primary-button-container:focus {
   background: var(--button-hover-color);
+  box-shadow: #ffffff;
+}
+
+/*--------------------------------
+  Secondary Button Colors and Style
+-----------------------------------*/
+
+.secondary-button-container {
+  background: var(--button-secondary-color) !important;
+  border: var(--border-primary) var(--button-secondary-border-color) !important;
+  color: var(--text-white) !important;
+  width: var(--button-secondary-width) !important;
+  height: var(--button-secondary-height) !important;
+  border-radius: var(--button-secondary-border-radius) !important;
+  cursor: var(--button-secondary-cursor);
+}
+
+.secondary-button-container:hover,
+.secondary-button-container:active,
+.secondary-button-container:focus {
+  background: var(--button-secondary-hover-color);
+  box-shadow: #ffffff;
 }

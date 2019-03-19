@@ -26,7 +26,7 @@ Left UNITE Logo
 
 #unite-logo-header {
   margin-left: 0.2em;
-  width: 5em;
+  width: 4.3em;
   margin-top: -0.4em;
   margin-right: 3px;
 }
@@ -36,7 +36,7 @@ Left UN Logo
 -------------------------- */
 
 #un-logo-header {
-  width: 2.7em;
+  width: 2.3em;
   margin-top: -0.3em;
   margin-right: 5px;
 }
@@ -60,6 +60,7 @@ Menu Item container
 
 .ant-menu-horizontal {
   border: none;
+  margin-top: 6px;
 }
 
 .ant-menu-horizontal > .ant-menu-item {
@@ -86,6 +87,8 @@ Menu Item link
 .ant-menu-horizontal > .ant-menu-item > a {
   color: var(--text-light-grey-color);
   font-family: var(--text-primary-font-family);
+  text-transform: uppercase !important;
+  font-weight: lighter;
 }
 
 .ant-menu-horizontal > .ant-menu-item > a:hover {

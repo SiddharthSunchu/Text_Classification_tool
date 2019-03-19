@@ -31,13 +31,13 @@ const Header = ({
 }) => (
   <Heading className="ett-header">
     <div className="un-logo">
-      <a href={CONTACT_INFO.UNISDR_HOME_LINK}>
+      <a href={CONTACT_INFO.UNITE_ETT_WEBISTE}>
         <img src={IMAGES.UNSYMBOL_UN_COLOR} alt="" id="un-logo-header" />
-        <img src={IMAGES.UNITE_LOGO_BLACK} id="unite-logo-header" alt="Unite" />
+        <img src={IMAGES.UNITE_NEW_LOGO_PRIMARY_COLOR} id="unite-logo-header" alt="Unite" />
       </a>
     </div>
     <div className="app-menu">
-      <Menu mode={mode} defaultSelectedKeys={[selectedKey]}>
+      <Menu mode={mode} selectedKeys={[selectedKey]}>
         {menuItems.map(el => (
           <Menu.Item key={el.key}>
             <Link to={el.route}>{el.title}</Link>
@@ -63,7 +63,12 @@ Header.defaultProps = {
 // Props Validation Rules
 Header.propTypes = {
   menuItems: PropTypes.instanceOf(Array),
-  children: PropTypes.element,
+  children: PropTypes.oneOfType([
+    PropTypes.element,
+    PropTypes.string,
+    PropTypes.array,
+    PropTypes.object,
+  ]),
   mode: PropTypes.oneOf(['horizontal', 'vertical', 'inline']),
   selectedKey: PropTypes.string,
 };

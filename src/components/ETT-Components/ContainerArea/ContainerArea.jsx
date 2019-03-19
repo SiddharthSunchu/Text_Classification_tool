@@ -21,32 +21,11 @@ import './ContainerArea.css';
  */
 const ContainerArea = ({
   children, height, style, className,
-}) => {
-  let boxShadow = null;
-  const containerStyle = {
-    display: STYLE.DISPLAY_FLEX,
-    justifyContent: STYLE.JUSTIFY_CONTENT_CENTER,
-    alignItems: STYLE.ALIGN_ITEMS,
-    height,
-    width: STYLE.CONTAINER_AREA_WIDTH,
-    transitionDuration: STYLE.DIV_TRANSITION_DURATION,
-    flexWrap: STYLE.FLEX_WRAP,
-    flexDirection: STYLE.FLEX_DIRECTION_VERTICAL,
-    boxShadow,
-    ...style,
-  };
-
-  const hoverStyle = () => {
-    boxShadow = STYLE.BOX_SHADOW;
-  };
-
-  return (
-    <div style={containerStyle} className={className} onMouseOver={hoverStyle} onFocus={hoverStyle}>
-      {children}
-    </div>
-  );
-};
-
+}) => (
+  <div className={className} style={{ height, ...style }}>
+    {children}
+  </div>
+);
 // Exporting Component
 export default ContainerArea;
 

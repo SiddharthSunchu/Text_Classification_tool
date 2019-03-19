@@ -23,7 +23,8 @@ import { LABEL_TYPE, API } from '../constants/index';
 const Batch = (inputLabelType) => {
   if (inputLabelType === LABEL_TYPE.HAZARD) {
     return axios.get(API.HAZARD_BATCH);
-  } if (inputLabelType === LABEL_TYPE.THEME) {
+  }
+  if (inputLabelType === LABEL_TYPE.THEME) {
     return axios.get(API.THEME_BATCH);
   }
   return null;
@@ -39,7 +40,8 @@ const RequestResponse = (inputLabelType, title, textData) => {
       title,
       textData,
     });
-  } if (inputLabelType === LABEL_TYPE.THEME) {
+  }
+  if (inputLabelType === LABEL_TYPE.THEME) {
     return axios.post(API.THEME_RESPONSE, {
       title,
       textData,
@@ -58,11 +60,20 @@ const DownloadFile = () => axios.get(API.DOWNLOAD_FILE);
  */
 const Refresh = () => axios.get(API.DELETE_FILE);
 
+const CurrentUser = () => axios.get('http://0.0.0.0:8000/currentUser', {});
+
+const Login = (username, password) => axios.post('http://0.0.0.0:8000/login', {
+  username,
+  password,
+});
+
 const SERVICE = Object.freeze({
   Batch,
   RequestResponse,
   DownloadFile,
   Refresh,
+  CurrentUser,
+  Login,
 });
 
 export default SERVICE;

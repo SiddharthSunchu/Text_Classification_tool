@@ -20,20 +20,20 @@ import './InputBox.css';
  */
 
 export const InputBox = ({
-  type, title, handleChange, data,
+  type, title, handleChange, data, placeholder = {title}
 }) => {
   if (type === 'textarea') {
     return (
       <label htmlFor={1}>
         {title}
-        <textarea type="text" value={data} onChange={handleChange} />
+        <textarea type="text" value={data} onChange={handleChange} placeholder={placeholder}/>
       </label>
     );
   }
   return (
     <label htmlFor={1}>
       {title}
-      <input type="text" value={data} onChange={handleChange} />
+      <input type="text" value={data} onChange={handleChange} placeholder={placeholder}/>
     </label>
   );
 };
@@ -44,6 +44,7 @@ InputBox.defaultProps = {
   title: 'Title',
   type: 'text',
   data: '',
+
 };
 
 InputBox.propTypes = {
@@ -51,4 +52,5 @@ InputBox.propTypes = {
   type: PropsTypes.string,
   handleChange: PropsTypes.func.isRequired,
   data: PropsTypes.string,
+  placeholder: PropsTypes.string,
 };

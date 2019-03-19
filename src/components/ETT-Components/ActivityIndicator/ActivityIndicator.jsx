@@ -21,7 +21,7 @@ import { COLORS, SIZE, CLASSNAME } from '../theme/ettStylePalette';
  * - large
  * @type StateLess Component
  */
-const ActivityIndicator = ({ color, size }) => {
+const ActivityIndicator = ({ color, size, style }) => {
   // By Default it takes size equals to medium
   let currentID = CLASSNAME.MEDIUM_ICON;
   // Putting the size condition to change the default size.
@@ -35,7 +35,7 @@ const ActivityIndicator = ({ color, size }) => {
     return null;
   }
   // JSX implementation of Activity Indicator
-  return <i className={CLASSNAME.SPINNER_ICON} id={currentID} style={{ color }} />;
+  return <i className={CLASSNAME.SPINNER_ICON} id={currentID} style={{ color, ...style }} />;
 };
 
 // Exporting Component
@@ -45,10 +45,12 @@ export default ActivityIndicator;
 ActivityIndicator.defaultProps = {
   size: SIZE.MEDIUM_ICON,
   color: COLORS.ICON_PROCESS,
+  style: {}
 };
 
 // Props Validation Rules
 ActivityIndicator.propTypes = {
   size: PropTypes.string,
   color: PropTypes.string,
+  style: PropTypes.instanceOf(Object)
 };

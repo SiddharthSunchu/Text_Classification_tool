@@ -1,0 +1,26 @@
+.select-input-container {
+  width: var(--select-input-box-width);
+  height: var(--select-input-box-height);
+  border: 1px solid var(--input-box-border-color);
+  background-color: var(--secondary-color);
+  font-family: var(--text-primary-font-family);
+  font-size: var(--text-primary-size);
+  color: var(--text-secondary-color);
+  padding: 10px;
+  box-shadow: 0px !important;
+  outline: none;
+  border-radius: 0px;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -ms-border-radius: 0px;
+}
+
+.select-input-container:hover,
+.select-input-container:active,
+.select-input-container:focus {
+  box-shadow: none !important;
+  border: 1px solid var(--primary-color);
+}

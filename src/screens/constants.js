@@ -11,9 +11,18 @@ import Home from './Home/Home';
 // Tool Component
 import Tool from './Tool/Tool';
 
+import Login from './Login/Login';
+
+import Setting from './Setting/Setting';
+
+import Profile from './Profile/Profile';
+
 export const SCREENS = Object.freeze({
   HOME: Home,
   TOOL: Tool,
+  LOGIN: Login,
+  SETTING: Setting,
+  PROFILE: Profile,
 });
 
 export default SCREENS;

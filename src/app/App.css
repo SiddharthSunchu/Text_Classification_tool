@@ -208,3 +208,188 @@ Team Info Area and Team description Styles
     var(--background-primary-style);
   box-shadow: var(--background-box-shadow-primary);
 }
+
+/*--------------------------------
+  Input Box Colors and Style
+-----------------------------------*/
+
+.ant-input:hover,
+.ant-input:active,
+.ant-input:focus {
+  /* border: 1px solid;
+  border-color: var(--primary-color); */
+  box-shadow: none;
+  font-family: var(--text-primary-font-family);
+}
+
+.ant-input {
+  color: var(--text-primary-color) !important;
+  font-family: var(--text-primary-font-family);
+  box-shadow: none;
+  width: 350px !important;
+  height: 50px;
+  box-shadow: none;
+  border: 1px solid var(--input-box-border-color) !important;
+  border-radius: 0px;
+}
+
+.ant-input.ant-input-lg {
+  border: 1px solid var(--input-box-border-color);
+  color: var(--text-primary-color) !important;
+  font-family: var(--text-primary-font-family);
+}
+
+.ant-input.ant-input-lg:hover {
+  border-color: var(--primary-color);
+}
+
+.ant-input.ant-input-lg:active {
+  border-color: var(--primary-color);
+}
+
+.ant-input.ant-input-lg:focus {
+  border-color: var(--primary-color);
+}
+
+.has-error.ant-input {
+  border-color: var(--error-color);
+}
+
+.has-error.ant-form-explain {
+  color: var(--error-color);
+}
+
+.has-error .ant-input:not([disabled]):hover {
+  border-color: var(--error-color);
+}
+
+.has-error .ant-form-explain {
+  border-color: var(--error-color);
+}
+
+.has-error .ant-input:focus {
+  box-shadow: none;
+  border-color: var(--error-color);
+}
+.has-error .ant-input {
+  border-color: var(--error-color);
+}
+.ant-btn-primary {
+  color: var(--text-white) !important;
+  background-color: var(--button-primary-color) !important;
+  border-color: var(--button-primary-border-color) !important;
+  width: 350px !important;
+}
+
+.ant-btn-primary:hover {
+  color: var(--text-white) !important;
+  background-color: var(--button-hover-color) !important;
+}
+
+.ant-btn-primary:hover > span {
+  font-weight: 600;
+}
+
+a {
+  color: var(--primary-color);
+}
+
+a:hover {
+  color: var(--button-hover-color);
+}
+
+.ant-form-item {
+  display: flex;
+  justify-content: center;
+}
+
+#refresh-button {
+  height: 50px !important;
+  /* color: #666666;
+  border: 1px solid #666666; */
+  margin-left: 30px;
+}
+
+#refresh-button:hover {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+/*--------------------------------
+  Login Screen Colors and Style
+-----------------------------------*/
+
+.ant-card {
+  background: none;
+  border: none;
+}
+
+/*--------------------------------
+  Dashboard Screen Colors and Style
+-----------------------------------*/
+
+/* .ant-select-auto-complete.ant-select .ant-input {
+  width: 350px !important;
+  height: 50px;
+  box-shadow: none;
+  border: 1px solid var(--input-box-border-color);
+  border-radius: 0px;
+} */
+
+/* .ant-select-auto-complete.ant-select:hover,
+.ant-select-auto-complete.ant-select:active,
+.ant-select-auto-complete.ant-select:focus {
+  border: 1px solid var(--primary-color);
+  box-shadow: none;
+} */
+
+/*--------------------------------
+  Form Control Colors and Style
+-----------------------------------*/
+
+.form-control {
+  color: var(--text-primary-color);
+  font-family: var(--text-primary-font-family);
+  width: 350px !important;
+  height: 50px;
+  border: 1px solid var(--input-box-border-color);
+  border-radius: 0px !important;
+}
+
+.form-control:hover,
+.form-control:active,
+.form-control:focus {
+  border: 1px solid var(--primary-color);
+  box-shadow: none;
+}
+
+.select.form-control:not([size]):not([multiple]) {
+  border-radius: 0px !important;
+}
+
+.form-col-password-container {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+.form-col-email-container {
+  margin-bottom: 20px;
+  margin-left: 6px;
+}
+
+.form-col-email-input-container {
+  margin-bottom: 20px;
+}
+
+/*--------------------------------
+  Placeholder Colors and Style
+-----------------------------------*/
+
+::placeholder {
+  color: var(--text-lighter-grey-color) !important;
+  font-family: var(--text-primary-font-family) !important;
+}
+
+.ant-select-selection__placeholder {
+  top: 75%;
+}

@@ -1,0 +1,32 @@
+/**
+* @author Siddharth Sunchu | siddharth.sunchu@un.org
+* @since 2019-02-28
+*/
+
+/*--------------------------------
+Ant Carousal Component Styles
+-----------------------------------*/
+
+.ant-carousel .slick-slider .slick-track,
+.ant-carousel .slick-slider .slick-list {
+  box-shadow: var(--background-box-shadow-primary);
+}
+
+.ant-carousel .slick-dots li {
+  background: var(--background-primary-shadow-color);
+}
+
+.ant-carousel .slick-dots li.slick-active button {
+  background: var(--background-tinted-active-color);
+}
+
+.ant-carousel {
+  margin: var(--carcousal-margin);
+}
+
+.ant-carousel .slick-slide {
+  text-align: var(--div-display-justify-content-primary);
+  height: var(--carousal-height);
+  background: var(--secondary-color);
+  overflow: var(--div-overflow-primary);
+}

@@ -4,11 +4,14 @@
  * @description Can also declare classname to have css style as well
  */
 
-//Base Component
-import React from "react";
+// Base Component
+import React from 'react';
 
-//Style Palette
-import { COLORS, SIZE } from "../../../theme/ettStylePalette";
+// Style Palette
+import { SIZE } from '../../../theme/ettStylePalette';
+
+// CSS Style
+import './SocialIcons.css';
 
 /**
  * @description Twitter Icon have props width fill and style
@@ -16,10 +19,10 @@ import { COLORS, SIZE } from "../../../theme/ettStylePalette";
  */
 export const Twitter = ({
   style = {},
-  fill = COLORS.ICON_PRIMARY_COLOR,
+  fill = '',
   width = SIZE.MEDIUM,
-  className = "",
-  viewBox = "0 0 410.155 410.155"
+  className = 'social-icons',
+  viewBox = '0 0 410.155 410.155',
 }) => (
   <svg
     width={width}
@@ -27,12 +30,13 @@ export const Twitter = ({
     height={width}
     viewBox={viewBox}
     xmlns="http://www.w3.org/2000/svg"
-    className={`svg-icon ${className || ""}`}
+    className={`svg-icon ${className || ''}`}
     xmlnsXlink="http://www.w3.org/1999/xlink"
   >
     <g>
       <g>
         <path
+          fill={fill}
           d="M403.632,74.18c-9.113,4.041-18.573,7.229-28.28,9.537c10.696-10.164,18.738-22.877,23.275-37.067
 	l0,0c1.295-4.051-3.105-7.554-6.763-5.385l0,0c-13.504,8.01-28.05,14.019-43.235,17.862c-0.881,0.223-1.79,0.336-2.702,0.336
 	c-2.766,0-5.455-1.027-7.57-2.891c-16.156-14.239-36.935-22.081-58.508-22.081c-9.335,0-18.76,1.455-28.014,4.325

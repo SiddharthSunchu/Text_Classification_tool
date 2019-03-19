@@ -11,7 +11,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 // Style Palette
-import { COLORS, SIZE, FONT_FAMILY } from '../theme/ettStylePalette';
+import { COLORS, SIZE, FONT_FAMILY, STYLE } from '../theme/ettStylePalette';
 
 /**
  * @author Siddharth Sunchu OICT-ETT | Siddharth.sunchu@un.org
@@ -19,7 +19,7 @@ import { COLORS, SIZE, FONT_FAMILY } from '../theme/ettStylePalette';
  *
  */
 export const MainHeaderText = ({
-  children, color, size, margin, style, className, fontFamily,
+  children, color, size, margin, style, className, fontFamily, letterSpacing, textTransform
 }) => (
   <h4
     className={className}
@@ -28,6 +28,8 @@ export const MainHeaderText = ({
       fontSize: size,
       marginBottom: margin,
       fontFamily,
+      letterSpacing,
+      textTransform,
       ...style,
     }}
   >
@@ -47,6 +49,8 @@ MainHeaderText.defaultProps = {
   style: {},
   className: null,
   fontFamily: FONT_FAMILY.PRIMARY_FONT_FAMILY,
+  letterSpacing: SIZE.TEXT_LETTER_SPACING,
+  textTransform: STYLE.TEXT_TRANSFORM_UPPERCASE
 };
 // Props Validation Rules
 MainHeaderText.propTypes = {
@@ -57,4 +61,6 @@ MainHeaderText.propTypes = {
   style: PropTypes.instanceOf(Object),
   className: PropTypes.string,
   fontFamily: PropTypes.string,
+  letterSpacing: PropTypes.string,
+  textTransform: PropTypes.string
 };

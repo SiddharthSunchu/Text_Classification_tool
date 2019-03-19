@@ -1,0 +1,73 @@
+/* .ant-select-auto-complete.ant-select .ant-input {
+  width: 350px !important;
+  height: 50px !important;
+  border: 1px solid var(--input-box-border-color);
+  border-radius: 0px;
+}
+
+.ant-select-combobox .ant-select-search--inline {
+  width: 350px;
+  height: 50px;
+}
+
+.ant-select-auto-complete.ant-select .ant-input:focus,
+.ant-select-auto-complete.ant-select .ant-input:hover {
+  border: 1px solid var(--primary-color);
+  box-shadow: none;
+}
+
+.ant-select-auto-complete {
+  width: 350px !important;
+  height: 50px !important;
+  box-shadow: none;
+  /* border: 1px solid var(--input-box-border-color) !important; */
+
+/* .ant-select-show-search
+  .ant-select-auto-complete
+  .ant-select
+  .ant-select-combobox
+  .ant-select-enabled {
+  border: 1px solid red;
+} */
+
+.autocomplete-input-box-container {
+  width: var(--select-input-box-width);
+  height: var(--select-input-box-height);
+  border: 1px solid var(--input-box-border-color);
+  background-color: var(--secondary-color);
+  font-family: var(--text-primary-font-family);
+  font-size: var(--text-primary-size);
+  color: var(--text-secondary-color);
+  margin: 0px;
+  padding: 10px;
+  box-shadow: 0px !important;
+  outline: none;
+  border-radius: 0px;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -ms-border-radius: 0px;
+}
+
+.autocomplete-input-box-container:hover,
+.autocomplete-input-box-container:active,
+.autocomplete-input-box-container:focus {
+  box-shadow: none !important;
+  border: 1px solid var(--primary-color);
+}
+
+.autocomplete-input-box-container::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.autocomplete-input-box-container::-webkit-appearance {
+  display: none;
+}
+
+.autocomplete-input-box-container > datalist {
+  font-size: 32px;
+  font-family: 'Times New Roman', Times, serif;
+  height: 10px;
+}
