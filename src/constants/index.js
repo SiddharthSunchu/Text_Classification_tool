@@ -19,7 +19,7 @@ export const IMAGES = Images;
 export const ROUTES = Object.freeze({
   HOME: '/',
   TOOL: '/tool',
-  TOOL: '/tool',
+  // TOOL: '/tool',
   LOGIN: '/login',
   PROFILE: '/profile',
   SETTING: '/setting',
@@ -69,7 +69,7 @@ export const FILE_TYPE = Object.freeze({
 });
 
 export const TITLES = Object.freeze({
-  PROJECT_NAME: ' Relief Web Classification',
+  PROJECT_NAME: ' Prevention Web Classification',
   DEPARTMENT_NAME: 'UNISDR',
   TECHNOLOGY_NAME: 'Machine Learning',
   HOME: 'HOME',
@@ -78,7 +78,7 @@ export const TITLES = Object.freeze({
   CLASSIFICATION_TOOL: ' Tool',
   PROJECT: 'Project',
   PROJECT_DESCRIPTION:
-    'This project applies Machine Learning techniques to attempt to improve the efficiency of classifying articles on the UNISDR Relief Web website for the Office for Disaster Risk Reduction. Each article is analyzed and then classified into one or more Hazard (17) and Theme (34) labels, according to varying features of the articles text.',
+    'This project applies Machine Learning techniques to attempt to improve the efficiency of classifying articles on the UNISDR Prevention Web website for the Office for Disaster Risk Reduction. Each article is analyzed and then classified into one or more Hazard (17) and Theme (34) labels, according to varying features of the articles text.',
   PROJECT_INFO:
     '* The overall scored accuracy of classification is 93% for Hazards, and 94% for Themes. We utilized because of the multi-label classification the <a href="https://en.wikipedia.org/wiki/Multi-label_classification" title="Multi-Label Classification - Hamming-Loss">"Hamming-Loss"</a> mathematical loss function to ascertain the overall scored accuracy for the combined models per type.',
   TITLE_DATA: 'title',
@@ -135,13 +135,13 @@ export const SERVICE_AREA = [
 
 export const SERVICE_AREA_TITLE = Object.freeze({
   HEADING: 'Objectives and Details',
-  DESCRIPTION: 'UNISDR Relief Web Classification Tool',
+  DESCRIPTION: 'UNISDR Prevention Web Classification Tool',
 });
 
 export const CAROUSAL = [
   Object.freeze({
     TITLE: 'Data Collection',
-    DESCRIPTION: 'Consuming the original text data from the Relief Web API endpoint.',
+    DESCRIPTION: 'Consuming the original text data from the Prevention Web API endpoint.',
   }),
   Object.freeze({
     TITLE: 'Data Preparation',

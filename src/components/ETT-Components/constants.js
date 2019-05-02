@@ -16,78 +16,76 @@ export const SERVICE_AREA = [
     TITLE: 'GOAL',
     DESCRIPTION: 'Categorize the articles',
     ICON_NAME: 'fa fa-check-circle',
-    IMAGES: ICONS.GOAL
+    IMAGES: ICONS.GOAL,
   }),
   Object.freeze({
     TITLE: 'Method',
     DESCRIPTION: 'Machine Learning Classification',
     ICON_NAME: 'fa fa-cogs',
-    IMAGES: ICONS.COGS
+    IMAGES: ICONS.COGS,
   }),
   Object.freeze({
     TITLE: 'Application',
     DESCRIPTION: 'Custom Data Analysis using Python Libraries',
     ICON_NAME: 'fa fa-windows',
-    IMAGES: ICONS.MICROSOFT
+    IMAGES: ICONS.MICROSOFT,
   }),
   Object.freeze({
     TITLE: 'Uplaod and Get Results',
     DESCRIPTION: 'Lables will be classified on Trained Models',
     ICON_NAME: 'fa fa-cloud-upload',
-    IMAGES: ICONS.CLOUD
-  })
+    IMAGES: ICONS.CLOUD,
+  }),
 ];
 
 export const SERVICE_AREA_TITLE = Object.freeze({
   HEADING: 'Objectives and Details',
-  DESCRIPTION: 'UNISDR Relief Web Classification Tool'
+  DESCRIPTION: 'UNISDR Prevention Web Classification Tool',
 });
 
 export const CAROUSAL = [
   Object.freeze({
     TITLE: 'Data Collection',
-    DESCRIPTION:
-      'Consuming the original text data from the Relief Web API endpoint.'
+    DESCRIPTION: 'Consuming the original text data from the Prevention Web API endpoint.',
   }),
   Object.freeze({
     TITLE: 'Data Preparation',
-    DESCRIPTION: 'Cleansing, pre-processing and normalizing data.'
+    DESCRIPTION: 'Cleansing, pre-processing and normalizing data.',
   }),
   Object.freeze({
     TITLE: 'Data Prerecession',
     DESCRIPTION:
-      'Normalizing case to lowercase and lemmatizing  words, removing stop words, special characters, duplicate characters, URL, email addresses.'
+      'Normalizing case to lowercase and lemmatizing  words, removing stop words, special characters, duplicate characters, URL, email addresses.',
   }),
   Object.freeze({
     TITLE: 'Data Balance',
-    DESCRIPTION:
-      'Data heavily unbalanced. Custom balancing of data using SMOKE function.'
+    DESCRIPTION: 'Data heavily unbalanced. Custom balancing of data using SMOKE function.',
   }),
   Object.freeze({
     TITLE: 'Feature Selection',
     DESCRIPTION:
-      'Using N-gram methods weighted by TF-IDF to generating text data’s feature vectors.'
+      'Using N-gram methods weighted by TF-IDF to generating text data’s feature vectors.',
   }),
   Object.freeze({
     TITLE: 'Model Selection and Evaluation',
     DESCRIPTION:
-      'Splitting the data into two parts: training data (80%) and testing data (20%). Comparing and optimizing different models’ performance and to obtain the highest accuracy. Hyper tuning of parameters.'
+      'Splitting the data into two parts: training data (80%) and testing data (20%). Comparing and optimizing different models’ performance and to obtain the highest accuracy. Hyper tuning of parameters.',
   }),
   Object.freeze({
     TITLE: 'Prediction',
     DESCRIPTION:
-      'Applying the test data to trained models and getting the predicted labels for articles.'
-  })
+      'Applying the test data to trained models and getting the predicted labels for articles.',
+  }),
 ];
 
 export const CAROUSAL_TITLE = Object.freeze({
   HEADING: 'Procedures',
-  DESCRIPTION: 'How does it Work ?'
+  DESCRIPTION: 'How does it Work ?',
 });
 
 export const CONTACT_INFO = Object.freeze({
   NAME: 'Contact Info',
-  TEAM_NAME: `Emerging Technologies`,
+  TEAM_NAME: 'Emerging Technologies',
   DIVISION_NAME: 'Policy, Strategy & Governance Division',
   DEPARTMENT_NAME: 'Office of Information and Communications Technology',
   COMPANY_NAME: 'United Nations',
@@ -105,14 +103,14 @@ export const CONTACT_INFO = Object.freeze({
   UNISDR_HOME_LINK: 'https://www.unisdr.org/',
   GOOGLE_MAPS: 'https://goo.gl/maps/7bBeNBddhHG2',
   UNISDR_WEBSITE: 'https://www.unisdr.org/',
-  UNITE_ETT_WEBISTE: 'https://unite.un.org/emerging-technologies'
+  UNITE_ETT_WEBISTE: 'https://unite.un.org/emerging-technologies',
 });
 
 export const TEAM_INFO = Object.freeze({
   TITLE: 'About Our Team',
   NAME: 'EMERGING TECHNOLOGIES TEAM',
   DESCRIPTION:
-    'Technology continues to develop at light speed. OICT as the technology provider for the UN Secretariat has to attempt to keep up with this pace. The Emerging Technology Team is a small, nimble and adaptable team that focuses on trying to correctly apply these frontier technologies for the benefit of the organizations objectives.'
+    'Technology continues to develop at light speed. OICT as the technology provider for the UN Secretariat has to attempt to keep up with this pace. The Emerging Technology Team is a small, nimble and adaptable team that focuses on trying to correctly apply these frontier technologies for the benefit of the organizations objectives.',
 });
 
 export const TEAM = [
@@ -123,7 +121,7 @@ export const TEAM = [
     ICONS: ICONS.MANAGER,
     TWITTER: CONTACT_INFO.UN_TWITTER,
     FACEBOOK: CONTACT_INFO.UN_FACEBOOK,
-    LINKDIN: CONTACT_INFO.UN_LINKEDIN
+    LINKDIN: CONTACT_INFO.UN_LINKEDIN,
   }),
   Object.freeze({
     NAME: 'Yihan Bao',
@@ -132,7 +130,7 @@ export const TEAM = [
     ICONS: ICONS.MACHINE_LEARNING,
     TWITTER: 'https://twitter.com/Yihan117',
     FACEBOOK: 'https://www.facebook.com/yihan.bao.9085',
-    LINKDIN: CONTACT_INFO.UN_LINKEDIN
+    LINKDIN: CONTACT_INFO.UN_LINKEDIN,
   }),
   Object.freeze({
     NAME: 'Siddharth Sunchu',
@@ -141,7 +139,7 @@ export const TEAM = [
     ICONS: ICONS.FRONT_END,
     TWITTER: 'https://twitter.com/Ssunchu28',
     FACEBOOK: 'https://www.facebook.com/siddharth.sunchu',
-    LINKDIN: 'https://www.linkedin.com/in/siddharth-sunchu/'
+    LINKDIN: 'https://www.linkedin.com/in/siddharth-sunchu/',
   }),
   Object.freeze({
     NAME: 'Sravanthi Varanasi',
@@ -150,7 +148,7 @@ export const TEAM = [
     ICONS: ICONS.SOFTWARE_ENGINEER,
     TWITTER: 'https://twitter.com/SravanthiV21',
     FACEBOOK: 'https://www.facebook.com/sravanthi.varanasi',
-    LINKDIN: 'https://www.linkedin.com/in/sravanthi-varanasi-a8431a76/'
+    LINKDIN: 'https://www.linkedin.com/in/sravanthi-varanasi-a8431a76/',
   }),
   Object.freeze({
     NAME: 'Praneeth Nooli',
@@ -159,7 +157,7 @@ export const TEAM = [
     ICONS: ICONS.DATA_SCIENCE,
     TWITTER: CONTACT_INFO.UN_TWITTER,
     FACEBOOK: CONTACT_INFO.UN_FACEBOOK,
-    LINKDIN: 'https://www.linkedin.com/in/praneethnooli/'
+    LINKDIN: 'https://www.linkedin.com/in/praneethnooli/',
   }),
   Object.freeze({
     NAME: 'Aishwarya Umachandran',
@@ -168,8 +166,8 @@ export const TEAM = [
     ICONS: ICONS.DATA_SCIENCE,
     TWITTER: CONTACT_INFO.UN_TWITTER,
     FACEBOOK: CONTACT_INFO.UN_FACEBOOK,
-    LINKDIN: CONTACT_INFO.UN_LINKEDIN
-  })
+    LINKDIN: CONTACT_INFO.UN_LINKEDIN,
+  }),
 ];
 
 export const TOOL_PAGE_DETAILS = Object.freeze({
@@ -179,30 +177,30 @@ export const TOOL_PAGE_DETAILS = Object.freeze({
   STEP_3_REQ: 'Step 3: Input data for classification',
   RESULTS: 'Results',
   DOWNLOAD: 'You can also download the file',
-  DRAG_DROP_MESSAGE: 'Click or drag file to this area to upload'
+  DRAG_DROP_MESSAGE: 'Click or drag file to this area to upload',
 });
 
 export const MODAL_INFO = [
   Object.freeze({
     title: 'Are you sure want to go back to Step 1?',
-    content: 'Going back to the previous step will delete the current data.'
+    content: 'Going back to the previous step will delete the current data.',
   }),
   Object.freeze({
     title: 'Are you sure want to go back to Step 2?',
-    content: 'Going back to the previous step will delete the current data.'
+    content: 'Going back to the previous step will delete the current data.',
   }),
   Object.freeze({
     title: 'Are you sure want to go back to Step 3?',
-    content: 'Going back to the previous step will delete the current data.'
+    content: 'Going back to the previous step will delete the current data.',
   }),
   Object.freeze({
-    title: 'You are already on Results Page'
-  })
+    title: 'You are already on Results Page',
+  }),
 ];
 
 export const HEADER_MENU = [
   Object.freeze({ key: '/', route: '/', title: 'HOME' }),
-  Object.freeze({ key: '/tool', route: '/tool', title: 'TOOL' })
+  Object.freeze({ key: '/tool', route: '/tool', title: 'TOOL' }),
 ];
 
 export const ERROR_MESSAGE = Object.freeze({
@@ -213,16 +211,16 @@ export const ERROR_MESSAGE = Object.freeze({
   FILE: 'Please Upload the File',
   CONNECTION_FAILED: 'Please Refresh the page. Connection failed',
   ONLY_CSV: 'You can only upload CSV file!',
-  ONE_FILE: 'You can only upload one CSV file at a time!'
+  ONE_FILE: 'You can only upload one CSV file at a time!',
 });
 
 export const SUCCESS_MESSAGE = Object.freeze({
   FILE_UPLOAD: ' file successfully uploaded.',
-  FILE_REMOVED: ' file successfully removed.'
+  FILE_REMOVED: ' file successfully removed.',
 });
 
 export const TITLES = Object.freeze({
-  PROJECT_NAME: ' Relief Web Classification',
+  PROJECT_NAME: ' Prevention Web Classification',
   DEPARTMENT_NAME: 'UNISDR',
   TECHNOLOGY_NAME: 'Machine Learning',
   HOME: 'HOME',
@@ -231,7 +229,7 @@ export const TITLES = Object.freeze({
   CLASSIFICATION_TOOL: ' Tool',
   PROJECT: 'Project',
   PROJECT_DESCRIPTION:
-    'This project applies Machine Learning techniques to attempt to improve the efficiency of classifying articles on the UNISDR Relief Web website for the Office for Disaster Risk Reduction. Each article is analyzed and then classified into one or more Hazard (17) and Theme (34) labels, according to varying features of the articles text.',
+    'This project applies Machine Learning techniques to attempt to improve the efficiency of classifying articles on the UNISDR Prevention Web website for the Office for Disaster Risk Reduction. Each article is analyzed and then classified into one or more Hazard (17) and Theme (34) labels, according to varying features of the articles text.',
   PROJECT_INFO:
     '* The overall scored accuracy of classification is 93% for Hazards, and 94% for Themes. We utilized because of the multi-label classification the <a href="https://en.wikipedia.org/wiki/Multi-label_classification" title="Multi-Label Classification - Hamming-Loss">"Hamming-Loss"</a> mathematical loss function to ascertain the overall scored accuracy for the combined models per type.',
   TITLE_DATA: 'title',
@@ -256,26 +254,25 @@ export const TITLES = Object.freeze({
   THEME_RESULT_INFO_2:
     'the Hamming-Loss, mathematical loss function to ascertain the overall scored accuracy for the combined models per type.',
   MULTILABEL_CLASSIFICATION: 'multi-label classification ',
-  MULTILABLE_CLASSIFICATION_LINK:
-    'https://en.wikipedia.org/wiki/Multi-label_classification'
+  MULTILABLE_CLASSIFICATION_LINK: 'https://en.wikipedia.org/wiki/Multi-label_classification',
 });
 
 export const DEFAULT_COLUMNS = [
   Object.freeze({
     title: 'Name',
     dataIndex: 'name',
-    key: 'name'
+    key: 'name',
   }),
   Object.freeze({
     title: 'Age',
     dataIndex: 'age',
-    key: 'age'
+    key: 'age',
   }),
   Object.freeze({
     title: 'Address',
     dataIndex: 'address',
-    key: 'address'
-  })
+    key: 'address',
+  }),
 ];
 
 export const DEFAULT_DATA = [
@@ -283,12 +280,12 @@ export const DEFAULT_DATA = [
     key: '1',
     name: 'Mike',
     age: 32,
-    address: '10 Downing Street'
+    address: '10 Downing Street',
   }),
   Object.freeze({
     key: '2',
     name: 'John',
     age: 42,
-    address: '10 Downing Street'
-  })
+    address: '10 Downing Street',
+  }),
 ];
