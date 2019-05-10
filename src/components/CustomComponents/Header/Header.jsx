@@ -62,9 +62,9 @@ const Header = ({ location, currentUser }) => {
       <Menu.Item key="/tool">
         <Link to="/tool">{HEADER_ROUTE_NAMES.TOOL}</Link>
       </Menu.Item>,
-      <Menu.Item key="/profile">
-        <Link to="/profile">{HEADER_ROUTE_NAMES.PROFILE}</Link>
-      </Menu.Item>,
+      // <Menu.Item key="/profile">
+      //   <Link to="/profile">{HEADER_ROUTE_NAMES.PROFILE}</Link>
+      // </Menu.Item>,
     ];
   } else {
     menuItem = [

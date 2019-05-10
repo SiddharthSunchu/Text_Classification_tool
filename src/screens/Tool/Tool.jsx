@@ -15,7 +15,9 @@ import { withRouter } from 'react-router-dom';
 import 'antd/dist/antd.css';
 
 // Contants
-import { TITLES, ERROR_MESSAGE, RESULT_RESULT } from '../../constants';
+import {
+  TITLES, ERROR_MESSAGE, RESULT_RESULT, INPUT_TYPE,
+} from '../../constants';
 
 // API_UTILS
 import API from '../../service/Service';
@@ -30,7 +32,7 @@ import CustomComponents from '../../components/CustomComponents/constants';
 import { SIZE, STYLE, CLASSNAME } from '../../theme/ettStylePalette';
 
 /**
- * @author Siddharth Sunchu (OICT)-ETT | siddharth.sunchu@un.org
+ *
  * @description Tool Component to display Tool page with all the functionality of all the
  * step selection and API calls
  * @description Global State for the Application
@@ -103,74 +105,59 @@ class Tool extends Component {
   }
 
   handleSubmit(event) {
-    // const {
-    //   labelType, inputType, title, textData,
-    // } = this.state;
+    const {
+      labelType, inputType, title, textData,
+    } = this.state;
     event.preventDefault();
 
     this.setState({
       steps: 3,
     });
-
-    setTimeout(() => {
-      this.setState({
-        output: RESULT_RESULT,
-        results: true,
-        steps: 4,
+    this.setState({ steps: 3 });
+    if (inputType === INPUT_TYPE.TYPE1) {
+      const Output = API.RequestResponse(labelType, title, textData);
+      Output.then((response) => {
+        if (response.data === TITLES.TITLE_DATA) {
+          ETTCOMPONENTS.ErrorNotification(ERROR_MESSAGE.TITLE_DATA);
+          this.setState({
+            steps: 2,
+          });
+        } else if (response.data === TITLES.TEXT_DATA) {
+          ETTCOMPONENTS.ErrorNotification(ERROR_MESSAGE.TEXT_DATA);
+          this.setState({
+            steps: 2,
+          });
+        } else if (response.data === TITLES.TITLE_TEXTDATA) {
+          ETTCOMPONENTS.ErrorNotification(ERROR_MESSAGE.TITLE_TEXTDATA);
+          this.setState({
+            steps: 2,
+          });
+        } else {
+          this.setState({
+            output: Object.values(response.data),
+            results: true,
+            steps: 4,
+          });
+        }
+      }).catch(() => {
+        ETTCOMPONENTS.ErrorNotification(ERROR_MESSAGE.REFRESH_PAGE);
       });
-    }, 3000);
-
-    // this.setState({
-    //   output: RESULT_RESULT,
-    //   results: true,
-    //   steps: 4,
-    // });
-
-    // this.setState({ steps: 3 });
-    // if (inputType === INPUT_TYPE.TYPE1) {
-    //   const Output = API.RequestResponse(labelType, title, textData);
-    //   Output.then((response) => {
-    //     if (response.data === TITLES.TITLE_DATA) {
-    //       ETTCOMPONENTS.ErrorNotification(ERROR_MESSAGE.TITLE_DATA);
-    //       this.setState({
-    //         steps: 2,
-    //       });
-    //     } else if (response.data === TITLES.TEXT_DATA) {
-    //       ETTCOMPONENTS.ErrorNotification(ERROR_MESSAGE.TEXT_DATA);
-    //       this.setState({
-    //         steps: 2,
-    //       });
-    //     } else if (response.data === TITLES.TITLE_TEXTDATA) {
-    //       ETTCOMPONENTS.ErrorNotification(ERROR_MESSAGE.TITLE_TEXTDATA);
-    //       this.setState({
-    //         steps: 2,
-    //       });
-    //     } else {
-    //       this.setState({
-    //         output: Object.values(response.data),
-    //         results: true,
-    //         steps: 4,
-    //       });
-    //     }
-    //   }).catch(() => {
-    //     ETTCOMPONENTS.ErrorNotification(ERROR_MESSAGE.REFRESH_PAGE);
-    //   });
-    // } else {
-    //   const output = API.Batch(labelType);
-    //   output.then((res) => {
-    //     console.log(res);
-    //     if (res.data === TITLES.FILE) {
-    //       ETTCOMPONENTS.ErrorNotification(ERROR_MESSAGE.FILE);
-    //       this.setState({ steps: 2 });
-    //     } else {
-    //       this.setState({
-    //         output: Object.values(res.data),
-    //         results: true,
-    //         steps: 4,
-    //       });
-    //     }
-    //   });
-    // }
+    } else {
+      const output = API.Batch(labelType);
+      output.then((res) => {
+        console.log(res);
+        if (res.data === TITLES.FILE) {
+          ETTCOMPONENTS.ErrorNotification(ERROR_MESSAGE.FILE);
+          this.setState({ steps: 2 });
+        } else {
+          this.setState({
+            output: Object.values(res.data),
+            results: true,
+            steps: 4,
+          });
+        }
+      });
+    }
   }
 
   moveToStep1() {
@@ -311,6 +298,7 @@ class Tool extends Component {
             onChangeTextData={this.onChangeTextData}
           />
         </section>
+        <ETTCOMPONENTS.SpaceSector height={100} />
       </div>
     );
   }

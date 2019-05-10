@@ -77,9 +77,11 @@ const CardContainer = ({ output, inputLabelType }) => {
       </ETTComponents.JustifyStartWrapper>
       {console.log(output)}
       {output.map((el1) => {
-        const string = el1.LABELS;
+        // const string = el1.LABELS;
+        const string = el1.labels;
         const arrayLabels = string.split(', ');
-        const prob = el1.PROB;
+        // const prob = el1.PROB;
+        const prob = el1.probability;
         const probLabels = prob.split(', ');
         const newLabel = [];
         for (let i = 0; i < probLabels.length; i += 1) {
@@ -87,10 +89,19 @@ const CardContainer = ({ output, inputLabelType }) => {
           probLabels[i] = parseFloat(probLabels[i]);
         }
 
+        // return (
+        //   <ETTComponents.Card
+        //     title={el1.TITLE}
+        //     key={el1.TITLE.toString()}
+        //     labels={newLabel}
+        //     labelValue={probLabels}
+        //   />
+        // );
+
         return (
           <ETTComponents.Card
-            title={el1.TITLE}
-            key={el1.TITLE.toString()}
+            title={el1.title}
+            key={el1.title.toString()}
             labels={newLabel}
             labelValue={probLabels}
           />

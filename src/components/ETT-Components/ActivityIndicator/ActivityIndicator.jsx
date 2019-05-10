@@ -32,7 +32,7 @@ const ActivityIndicator = ({ color, size, style }) => {
   } else if (size === SIZE.SMALL_ICON) {
     currentID = CLASSNAME.SMALL_ICON;
   } else {
-    return null;
+    currentID = CLASSNAME.MEDIUM_ICON;
   }
   // JSX implementation of Activity Indicator
   return <i className={CLASSNAME.SPINNER_ICON} id={currentID} style={{ color, ...style }} />;
@@ -45,12 +45,12 @@ export default ActivityIndicator;
 ActivityIndicator.defaultProps = {
   size: SIZE.MEDIUM_ICON,
   color: COLORS.ICON_PROCESS,
-  style: {}
+  style: {},
 };
 
 // Props Validation Rules
 ActivityIndicator.propTypes = {
   size: PropTypes.string,
   color: PropTypes.string,
-  style: PropTypes.instanceOf(Object)
+  style: PropTypes.instanceOf(Object),
 };

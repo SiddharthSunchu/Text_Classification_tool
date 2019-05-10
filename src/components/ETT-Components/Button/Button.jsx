@@ -39,58 +39,93 @@ import { BUTTON_STYLE, BUTTON_CONSTANTS } from './ButtonPalette';
 const Button = ({
   type, disabled, icon, loading, title, onClick,
 }) => {
+  let defaultClassName = BUTTON_CONSTANTS.DEFAULT_CLASSNAME;
+  const style = {
+    color: BUTTON_STYLE.DEFAULT_TEXT_COLOR,
+    letterSpacing: BUTTON_STYLE.LETTER_SPACING,
+    textTransform: BUTTON_STYLE.TEXT_TRANSFORM,
+    marginBottom: BUTTON_STYLE.TEXT_MARGIN_BOTTOM,
+  };
   if (type === BUTTON_CONSTANTS.SECONDARY_TYPE) {
-    return (
-      <Push
-        disabled={disabled}
-        icon={icon}
-        loading={loading}
-        onClick={onClick}
-        className={BUTTON_CONSTANTS.SECONDARY_CLASSNAME}
-      >
-        <ETTCOMPONENTS.Paragraph
-          color={BUTTON_STYLE.SECONDARY_TEXT_COLOR}
-          style={{
-            letterSpacing: BUTTON_STYLE.SECONDARY_LETTER_SPACING,
-            textTransform: BUTTON_STYLE.TEXT_TRANSFORM,
-            marginBottom: BUTTON_STYLE.TEXT_MARGIN_BOTTOM,
-          }}
-        >
-          {title}
-        </ETTCOMPONENTS.Paragraph>
-      </Push>
-    );
+    defaultClassName = BUTTON_CONSTANTS.SECONDARY_CLASSNAME;
+    style.color = BUTTON_STYLE.SECONDARY_TEXT_COLOR;
+    style.letterSpacing = BUTTON_STYLE.SECONDARY_LETTER_SPACING;
+  } else if (type === BUTTON_CONSTANTS.PRIMARY_TYPE) {
+    defaultClassName = BUTTON_CONSTANTS.PRIMARY_CLASSNAME;
+    style.color = BUTTON_STYLE.PRIMARY_TEXT_COLOR;
+    style.letterSpacing = BUTTON_STYLE.PRIMARY_LETTER_SPACING;
+  } else {
+    defaultClassName = BUTTON_CONSTANTS.DEFAULT_CLASSNAME;
+    style.color = BUTTON_STYLE.DEFAULT_TEXT_COLOR;
+    style.letterSpacing = BUTTON_STYLE.LETTER_SPACING;
   }
-  if (type === BUTTON_CONSTANTS.PRIMARY_TYPE) {
-    return (
-      <Push disabled={disabled} onClick={onClick} className={BUTTON_CONSTANTS.PRIMARY_CLASSNAME}>
-        <ETTCOMPONENTS.Paragraph
-          color={BUTTON_STYLE.PRIMARY_TEXT_COLOR}
-          style={{
-            letterSpacing: BUTTON_STYLE.PRIMARY_LETTER_SPACING,
-            textTransform: BUTTON_STYLE.TEXT_TRANSFORM,
-            marginBottom: BUTTON_STYLE.TEXT_MARGIN_BOTTOM,
-          }}
-        >
-          {title}
-        </ETTCOMPONENTS.Paragraph>
-      </Push>
-    );
-  }
+
   return (
-    <Push disabled={disabled} onClick={onClick} className={BUTTON_CONSTANTS.DEFAULT_CLASSNAME}>
-      <ETTCOMPONENTS.Paragraph
-        color={BUTTON_STYLE.DEFAULT_TEXT_COLOR}
-        style={{
-          letterSpacing: BUTTON_STYLE.LETTER_SPACING,
-          textTransform: BUTTON_STYLE.TEXT_TRANSFORM,
-          marginBottom: BUTTON_STYLE.TEXT_MARGIN_BOTTOM,
-        }}
-      >
+    <Push
+      disabled={disabled}
+      icon={icon}
+      loading={loading}
+      onClick={onClick}
+      className={defaultClassName}
+    >
+      <ETTCOMPONENTS.Paragraph color={BUTTON_STYLE.SECONDARY_TEXT_COLOR} style={style}>
         {title}
       </ETTCOMPONENTS.Paragraph>
     </Push>
   );
+
+  // if (type === BUTTON_CONSTANTS.SECONDARY_TYPE) {
+  //   return (
+  //     <Push
+  //       disabled={disabled}
+  //       icon={icon}
+  //       loading={loading}
+  //       onClick={onClick}
+  //       className={BUTTON_CONSTANTS.SECONDARY_CLASSNAME}
+  //     >
+  //       <ETTCOMPONENTS.Paragraph
+  //         color={BUTTON_STYLE.SECONDARY_TEXT_COLOR}
+  //         style={{
+  //           letterSpacing: BUTTON_STYLE.SECONDARY_LETTER_SPACING,
+  //           textTransform: BUTTON_STYLE.TEXT_TRANSFORM,
+  //           marginBottom: BUTTON_STYLE.TEXT_MARGIN_BOTTOM,
+  //         }}
+  //       >
+  //         {title}
+  //       </ETTCOMPONENTS.Paragraph>
+  //     </Push>
+  //   );
+  // }
+  // if (type === BUTTON_CONSTANTS.PRIMARY_TYPE) {
+  //   return (
+  //     <Push disabled={disabled} onClick={onClick} className={BUTTON_CONSTANTS.PRIMARY_CLASSNAME}>
+  //       <ETTCOMPONENTS.Paragraph
+  //         color={BUTTON_STYLE.PRIMARY_TEXT_COLOR}
+  //         style={{
+  //           letterSpacing: BUTTON_STYLE.PRIMARY_LETTER_SPACING,
+  //           textTransform: BUTTON_STYLE.TEXT_TRANSFORM,
+  //           marginBottom: BUTTON_STYLE.TEXT_MARGIN_BOTTOM,
+  //         }}
+  //       >
+  //         {title}
+  //       </ETTCOMPONENTS.Paragraph>
+  //     </Push>
+  //   );
+  // }
+  // return (
+  //   <Push disabled={disabled} onClick={onClick} className={BUTTON_CONSTANTS.DEFAULT_CLASSNAME}>
+  //     <ETTCOMPONENTS.Paragraph
+  //       color={BUTTON_STYLE.DEFAULT_TEXT_COLOR}
+  //       style={{
+  //         letterSpacing: BUTTON_STYLE.LETTER_SPACING,
+  //         textTransform: BUTTON_STYLE.TEXT_TRANSFORM,
+  //         marginBottom: BUTTON_STYLE.TEXT_MARGIN_BOTTOM,
+  //       }}
+  //     >
+  //       {title}
+  //     </ETTCOMPONENTS.Paragraph>
+  //   </Push>
+  // );
 };
 
 // Exporting Component

@@ -58,17 +58,18 @@ class Login extends React.Component {
   submitLogin(values) {
     // const flag = false;
     const output = SERVICE.Login(values.username, values.password);
-    output.then((res) => {
-      // if (res.data === 'user') {
-      //   this.props.history.push('/user/tool');
-      // }
+    const demo = 'user';
+    this.props.handleCurrentUser(demo);
+    // output.then((res) => {
+    //   // if (res.data === 'user') {
+    //   //   this.props.history.push('/user/tool');
+    //   // }
 
-      // if (res.data === 'admin') {
-      //   this.props.history.push('/admin/tool');
-      // }
+    //   // if (res.data === 'admin') {
+    //   //   this.props.history.push('/admin/tool');
+    //   // }
 
-      this.props.handleCurrentUser(res.data);
-    });
+    // });
   }
 
   render() {

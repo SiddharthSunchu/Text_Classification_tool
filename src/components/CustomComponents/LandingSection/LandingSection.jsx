@@ -61,7 +61,7 @@ const LandingSection = () => (
           </Col>
           <Col>
             <ETTComponents.MainHeaderText
-              size={SIZE.MAIN_HEADER}
+              size={65}
               style={{ marginBottom: SIZE.SECTOR_HEIGHT_ZER0 }}
             >
               {TITLES.TECHNOLOGY_NAME}

@@ -69,7 +69,7 @@ export const FILE_TYPE = Object.freeze({
 });
 
 export const TITLES = Object.freeze({
-  PROJECT_NAME: ' Prevention Web Classification',
+  PROJECT_NAME: ' Text Classification',
   DEPARTMENT_NAME: 'UNISDR',
   TECHNOLOGY_NAME: 'Machine Learning',
   HOME: 'HOME',
